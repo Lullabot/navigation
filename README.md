@@ -1,2 +1,2 @@
 # navigation
-Drupal core new administration navigation.
+Drupal core new administration navigation. :)
