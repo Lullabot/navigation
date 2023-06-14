@@ -1,0 +1,119 @@
+/**
+ * @file Navigation.menu.css
+ */
+
+.navigation .navigation-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation .navigation-box {
+  position: relative;
+  display: block;
+  inline-size: auto;
+  line-height: 1em; /* this prevents the value "normal" from being returned as the line-height */
+}
+
+/**
+ * Hidden vertical navigation sub-menus by default.
+ */
+.navigation .navigation-menu ul {
+  display: none;
+}
+
+/**
+ * Hidden navigation sub-menus by default.
+ */
+.navigation .navigation-menu .menu-item--expanded ul {
+  display: none;
+}
+.navigation li.open > ul {
+  display: block; /* Show the sub-menus */
+}
+.navigation .navigation-handle + a {
+  margin-inline-end: 3em; /* LTR */
+}
+
+.navigation .navigation-menu {
+  background-color: #fff;
+}
+.navigation .menu-item + .menu-item {
+  border-block-start: 1px solid #ddd;
+}
+.navigation .menu-item:last-child {
+  border-block-end: 1px solid #ddd;
+}
+.navigation .menu-item .menu-item {
+  border: 0 none;
+}
+.navigation .navigation-menu ul ul {
+  border-block-start: 1px solid #ddd;
+  border-block-end: 1px solid #ddd;
+}
+.navigation .menu-item:last-child > ul {
+  border-block-end: 0;
+}
+.navigation .navigation-menu .navigation-menu .navigation-menu .navigation-menu {
+  margin-inline-start: 0.25em; 
+}
+.navigation .navigation-menu .navigation-menu a {
+  color: #434343;
+}
+
+/**
+ * Items.
+ */
+
+.navigation .level-2 > ul {
+  border-block-start-color: #e5e5e5;
+  border-block-end-color: #ccc;
+  background-color: #fafafa;
+}
+.navigation .level-3 > ul {
+  border-block-start-color: #ddd;
+  border-block-end-color: #c5c5c5;
+  background-color: #f5f5f5;
+}
+.navigation .level-4 > ul {
+  border-block-start-color: #d5d5d5;
+  border-block-end-color: #bbb;
+  background-color: #eee;
+}
+.navigation .level-5 > ul {
+  border-block-start-color: #ccc;
+  border-block-end-color: #b5b5b5;
+  background-color: #e5e5e5;
+}
+.navigation .level-6 > ul {
+  border-block-start-color: #c5c5c5;
+  border-block-end-color: #aaa;
+  background-color: #eee;
+}
+.navigation .level-7 > ul {
+  border-block-start-color: #ccc;
+  border-block-end-color: #b5b5b5;
+  background-color: #fafafa;
+}
+.navigation .level-8 > ul {
+  border-block-start-color: #ddd;
+  border-block-end-color: #ccc;
+  background-color: #ddd;
+}
+
+/**
+ * Handle.
+ */
+
+.navigation .navigation-handle:hover {
+  cursor: pointer;
+}
+.navigation .navigation-icon.navigation-handle {
+  position: absolute;
+  z-index: 1;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  display: block;
+  block-size: 100%;
+  padding: 0;
+}

@@ -1,0 +1,138 @@
+/**
+ * @file
+ * Styling for Navigation module icons.
+ */
+
+.navigation .navigation-icon {
+  position: relative;
+  padding-inline-start: 2.75em;
+  padding-block: 1.3333em;
+  color: #565656;
+  text-decoration: none;
+}
+
+.navigation .navigation-icon:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.navigation .navigation-icon:active,
+.navigation .navigation-icon:focus,
+.navigation .navigation-icon:focus-within {
+  text-decoration: underline;
+  color: #000;
+}
+
+.navigation .navigation-icon:before {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0.6667em; 
+  display: block;
+  inline-size: 20px;
+  block-size: 100%;
+  content: "";
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: 100% auto;
+}
+.navigation button.navigation-icon {
+  border: 0;
+  background-color: transparent;
+  font-size: 1em;
+}
+.navigation .navigation-menu ul .navigation-icon {
+  padding-inline-start: 1.3333em; 
+}
+.navigation .navigation-menu ul a.navigation-icon:before {
+  display: none;
+}
+
+/* @TODO - Update the correct paths to point to Core icon locations */
+
+.navigation-icon-system-admin-content:before {
+  background-image: url(../icons/787878/file.svg);
+}
+.navigation-icon-system-admin-content:active:before,
+.navigation-icon-system-admin-content.is-active:before {
+  background-image: url(../icons/000000/file.svg);
+}
+.navigation-icon-system-admin-structure:before {
+  background-image: url(../icons/787878/orgchart.svg);
+}
+.navigation-icon-system-admin-structure:active:before,
+.navigation-icon-system-admin-structure.is-active:before {
+  background-image: url(../icons/000000/orgchart.svg);
+}
+.navigation-icon-system-themes-page:before {
+  background-image: url(../icons/787878/paintbrush.svg);
+}
+.navigation-icon-system-themes-page:active:before,
+.navigation-icon-system-themes-page.is-active:before {
+  background-image: url(../icons/000000/paintbrush.svg);
+}
+.navigation-icon-entity-user-collection:before {
+  background-image: url(../icons/787878/people.svg);
+}
+.navigation-icon-entity-user-collection:active:before,
+.navigation-icon-entity-user-collection.is-active:before {
+  background-image: url(../icons/000000/people.svg);
+}
+.navigation-icon-system-modules-list:before {
+  background-image: url(../icons/787878/puzzlepiece.svg);
+}
+.navigation-icon-system-modules-list:active:before,
+.navigation-icon-system-modules-list.is-active:before {
+  background-image: url(../icons/000000/puzzlepiece.svg);
+}
+.navigation-icon-system-admin-config:before {
+  background-image: url(../icons/787878/wrench.svg);
+}
+.navigation-icon-system-admin-config:active:before,
+.navigation-icon-system-admin-config.is-active:before {
+  background-image: url(../icons/000000/wrench.svg);
+}
+.navigation-icon-system-admin-reports:before {
+  background-image: url(../icons/787878/barchart.svg);
+}
+.navigation-icon-system-admin-reports:active:before,
+.navigation-icon-system-admin-reports.is-active:before {
+  background-image: url(../icons/000000/barchart.svg);
+}
+
+/**
+ *  Accessibility/focus
+ */
+
+.navigation .navigation-icon.navigation-handle:focus {
+  outline: none;
+  background-color: #f5f5f5;
+}
+
+/**
+ * Handle.
+ */
+
+.navigation .navigation-icon.navigation-handle {
+  inline-size: 4em;
+  text-indent: -9999px;
+}
+.navigation .navigation-icon.navigation-handle:before {
+  inset-inline-start: 1.6667em; 
+}
+.navigation .navigation-icon.navigation-handle:before {
+  background-image: url(../icons/75767B/chevron-down.svg);
+  background-size: 60%;
+}
+.navigation .navigation-icon.navigation-handle.open:before {
+  background-image: url(../icons/787878/chevron-disc-up.svg);
+}
+.navigation .navigation-menu .navigation-menu .navigation-icon.navigation-handle:before {
+  background-image: url(../icons/5181c6/twistie-down.svg);
+  background-size: 75%;
+}
+.navigation .navigation-menu .navigation-menu .navigation-icon.navigation-handle.open:before {
+  background-image: url(../icons/787878/twistie-up.svg);
+  background-size: 75%;
+}
