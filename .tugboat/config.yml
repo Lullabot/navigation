@@ -27,3 +27,4 @@ services:
       build: |
         npm install
         npm run build
+        
