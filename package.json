@@ -2,10 +2,13 @@
   "name": "navigation",
   "version": "1.0.0",
   "description": "This repo contains the initial work for the reworking of the core administration toolbar in Drupal core.",
-  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lullabot/navigation.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "watch": "postcss src/style.css --dir dist --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Lullabot/navigation/issues"
   },
-  "homepage": "https://github.com/Lullabot/navigation#readme"
+  "homepage": "https://github.com/Lullabot/navigation#readme",
+  "devDependencies": {
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.5.0"
+  }
 }

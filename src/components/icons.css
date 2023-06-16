@@ -52,53 +52,53 @@
 /* @TODO - Update the correct paths to point to Core icon locations */
 
 .navigation-icon-system-admin-content:before {
-  background-image: url(../icons/787878/file.svg);
+  background-image: url(../../icons/787878/file.svg);
 }
 .navigation-icon-system-admin-content:active:before,
 .navigation-icon-system-admin-content.is-active:before {
-  background-image: url(../icons/000000/file.svg);
+  background-image: url(../../icons/000000/file.svg);
 }
 .navigation-icon-system-admin-structure:before {
-  background-image: url(../icons/787878/orgchart.svg);
+  background-image: url(../../icons/787878/orgchart.svg);
 }
 .navigation-icon-system-admin-structure:active:before,
 .navigation-icon-system-admin-structure.is-active:before {
-  background-image: url(../icons/000000/orgchart.svg);
+  background-image: url(../../icons/000000/orgchart.svg);
 }
 .navigation-icon-system-themes-page:before {
-  background-image: url(../icons/787878/paintbrush.svg);
+  background-image: url(../../icons/787878/paintbrush.svg);
 }
 .navigation-icon-system-themes-page:active:before,
 .navigation-icon-system-themes-page.is-active:before {
-  background-image: url(../icons/000000/paintbrush.svg);
+  background-image: url(../../icons/000000/paintbrush.svg);
 }
 .navigation-icon-entity-user-collection:before {
-  background-image: url(../icons/787878/people.svg);
+  background-image: url(../../icons/787878/people.svg);
 }
 .navigation-icon-entity-user-collection:active:before,
 .navigation-icon-entity-user-collection.is-active:before {
-  background-image: url(../icons/000000/people.svg);
+  background-image: url(../../icons/000000/people.svg);
 }
 .navigation-icon-system-modules-list:before {
-  background-image: url(../icons/787878/puzzlepiece.svg);
+  background-image: url(../../icons/787878/puzzlepiece.svg);
 }
 .navigation-icon-system-modules-list:active:before,
 .navigation-icon-system-modules-list.is-active:before {
-  background-image: url(../icons/000000/puzzlepiece.svg);
+  background-image: url(../../icons/000000/puzzlepiece.svg);
 }
 .navigation-icon-system-admin-config:before {
-  background-image: url(../icons/787878/wrench.svg);
+  background-image: url(../../icons/787878/wrench.svg);
 }
 .navigation-icon-system-admin-config:active:before,
 .navigation-icon-system-admin-config.is-active:before {
-  background-image: url(../icons/000000/wrench.svg);
+  background-image: url(../../icons/000000/wrench.svg);
 }
 .navigation-icon-system-admin-reports:before {
-  background-image: url(../icons/787878/barchart.svg);
+  background-image: url(../../icons/787878/barchart.svg);
 }
 .navigation-icon-system-admin-reports:active:before,
 .navigation-icon-system-admin-reports.is-active:before {
-  background-image: url(../icons/000000/barchart.svg);
+  background-image: url(../../icons/000000/barchart.svg);
 }
 
 /**
@@ -122,17 +122,17 @@
   inset-inline-start: 1.6667em; 
 }
 .navigation .navigation-icon.navigation-handle:before {
-  background-image: url(../icons/75767B/chevron-down.svg);
+  background-image: url(../../icons/75767B/chevron-down.svg);
   background-size: 60%;
 }
 .navigation .navigation-icon.navigation-handle.open:before {
-  background-image: url(../icons/787878/chevron-disc-up.svg);
+  background-image: url(../../icons/787878/chevron-disc-up.svg);
 }
 .navigation .navigation-menu .navigation-menu .navigation-icon.navigation-handle:before {
-  background-image: url(../icons/5181c6/twistie-down.svg);
+  background-image: url(../../icons/5181c6/twistie-down.svg);
   background-size: 75%;
 }
 .navigation .navigation-menu .navigation-menu .navigation-icon.navigation-handle.open:before {
-  background-image: url(../icons/787878/twistie-up.svg);
+  background-image: url(../../icons/787878/twistie-up.svg);
   background-size: 75%;
 }
