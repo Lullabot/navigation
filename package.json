@@ -1,0 +1,17 @@
+{
+  "name": "navigation",
+  "version": "1.0.0",
+  "description": "This repo contains the initial work for the reworking of the core administration toolbar in Drupal core.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lullabot/navigation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lullabot/navigation/issues"
+  },
+  "homepage": "https://github.com/Lullabot/navigation#readme"
+}
