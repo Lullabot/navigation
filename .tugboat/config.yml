@@ -18,13 +18,13 @@ services:
         apt-get install -y nodejs
 
         # Install dependencies and build the project.
-        npm install
+        # npm install
         # npm run build
 
         # Link the document root to the expected path. This example links the
         # dist directory to the docroot.
-        ln -snf "${TUGBOAT_ROOT}/dist" "${DOCROOT}"
+        ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
       build: |
-        npm install
+        # npm install
         # npm run build
         
