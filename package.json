@@ -6,9 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/Lullabot/navigation.git"
   },
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "watch": "postcss src/style.css --dir dist --watch"
+    "build": "postcss css/style.css --dir dist",
+    "watch": "postcss css/style.css --dir dist --watch"
   },
   "keywords": [],
   "author": "",
