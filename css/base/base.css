@@ -1,10 +1,8 @@
 /**
- * @file navigation.theme.css
  * General styling for the HTML demonstration
  */
 
  html {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -23,45 +21,15 @@
 }
 
 .navigation__toolbar--wrapper {
-  font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
   font-size: 1rem;
   box-sizing: border-box;
   inline-size: 100%;
   max-inline-size: 240px;
   border-inline-end: 1px solid #aaa;
-  background-color: #f5f5f5;
+  background-color: white;
   box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.3333);
 }
-.navigation .navigation-item {
-  padding: 1em 1.3333em;
-  cursor: pointer;
-  text-decoration: none;
-  line-height: 1em;
-}
-.navigation .navigation-item:hover,
-.navigation .navigation-item:focus {
-  text-decoration: underline;
-}
 
-.navigation li,
-.navigation .item-list,
-.navigation .item-list li,
-.navigation .menu-item,
-.navigation .menu-item--expanded {
-  list-style-type: none;
-  list-style-image: none;
-}
-.navigation .menu-item {
-  padding-block-start: 0;
-}
-.navigation a {
-  display: block;
-  line-height: 1;
-}
-
-.navigation__container > .navigation__navigation--wrapper {
-  min-height: 100%;
-}
 /* When the configured standard breakpoint is active and the tray is in a
  * vertical position, the tray does not scroll with the page. The contents of
  * the tray scroll within the confines of the viewport.
@@ -82,33 +50,6 @@
   inline-size: 100%;
 }
 
-.navigation__content--wrapper .navigation__content--breadcrumb {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation__content--wrapper .breadcrumb__list {
-  padding-inline-start: 0;
-  display: flex;
-}
-
-.navigation__content--wrapper .breadcrumb__link {
-  color: #232429;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.navigation__content--wrapper .breadcrumb__link:after {
-  display: inline-block;
-  padding: 0 0.75rem;
-  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' height='8' width='5'%3e%3cpath fill='currentColor' d='M1.207.647L.5 1.354 3.146 4 .5 6.647l.707.707L4.561 4z'/%3e%3c/svg%3e");
-}
-
-.navigation__content--wrapper .breadcrumb__item:last-of-type .breadcrumb__link:after {
-  content: "";
-}
-
 .navigation__content--wrapper .navigation__content--profile-icon {
   display: block;
   inline-size: 18px;
@@ -116,10 +57,8 @@
   padding: 9px;
   margin-inline-end: 20px;
   text-indent: -9999px;
-  background-image: url(../../icons/75767B/user-icon.svg);
+  background: url(../icons/75767B/user-icon.svg) no-repeat center;
   background-size: 18px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .navigation__content--inner {
