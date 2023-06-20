@@ -3,84 +3,54 @@
   padding: 0;
   list-style: none;
   background-color: #fff;
+}
 
-  & a {
-    display: block;
-    line-height: 1;
-  }
+.navigation-menu a {
+  display: block;
+  line-height: 1;
+}
 
-  /**
-  * Hidden vertical navigation sub-menus by default.
-  */
-  & ul {
-    display: none;
+/**
+* Hidden vertical navigation sub-menus by default.
+*/
+.navigation-menu ul {
+  display: none;
+}
 
-    & ul {
-      border-block-start: 1px solid #ddd;
-      border-block-end: 1px solid #ddd;
-    }
-  }
+.navigation-menu ul ul {
+  border-block-start: 1px solid #ddd;
+  border-block-end: 1px solid #ddd;
+}
 
-  & li.open > ul {
-    display: block; /* Show the sub-menus */
-  }
+.navigation-menu li.open > ul {
+  display: block; /* Show the sub-menus */
+}
 
-  /**
-  * Hidden navigation sub-menus by default.
-  */
-  & .menu-item--expanded ul {
-    display: none;
-  }
+/**
+* Hidden navigation sub-menus by default.
+*/
+.navigation-menu .menu-item--expanded ul {
+  display: none;
+}
 
-  & .navigation-menu .navigation-menu .navigation-menu {
-    margin-inline-start: 0.25em; 
-  }
+.navigation-menu .navigation-menu .navigation-menu .navigation-menu {
+  margin-inline-start: 0.25em; 
+}
 
-  & .navigation-menu a {
-    color: #434343;
-  }
+.navigation-menu .navigation-menu a {
+  color: #434343;
+}
 
-  & .level-2 > ul {
-    border-block-start-color: #e5e5e5;
-    border-block-end-color: #ccc;
-    background-color: #fafafa;
-  }
-  
-  & .level-3 > ul {
-    border-block-start-color: #ddd;
-    border-block-end-color: #c5c5c5;
-    background-color: #f5f5f5;
-  }
-  
-  & .level-4 > ul {
-    border-block-start-color: #d5d5d5;
-    border-block-end-color: #bbb;
-    background-color: #eee;
-  }
-  
-  & .level-5 > ul {
-    border-block-start-color: #ccc;
-    border-block-end-color: #b5b5b5;
-    background-color: #e5e5e5;
-  }
-  
-  & .level-6 > ul {
-    border-block-start-color: #c5c5c5;
-    border-block-end-color: #aaa;
-    background-color: #eee;
-  }
-  
-  & .level-7 > ul {
-    border-block-start-color: #ccc;
-    border-block-end-color: #b5b5b5;
-    background-color: #fafafa;
-  }
-  
-  & .level-8 > ul {
-    border-block-start-color: #ddd;
-    border-block-end-color: #ccc;
-    background-color: #ddd;
-  }
+.navigation-menu .level-2 > ul {
+  border-block-start-color: #e5e5e5;
+  border-block-end-color: #ccc;
+  background-color: #fafafa;
+}
+
+.navigation-menu .level-3 > ul {
+  border-block-start-color: #ddd;
+  border-block-end-color: #c5c5c5;
+  background-color: #f5f5f5;
 }
 
 .navigation-box {
@@ -93,32 +63,30 @@
 .menu-item {
   list-style: none;
   padding-block-start: 0;
+}
 
-  & .menu-item {
-    border: 0 none;
-  }
+.menu-item .menu-item {
+  border: 0 none;
 }
 
 /**
  * Handle.
  */
-.navigation-handle {
-  &:hover {
-    cursor: pointer;
-  }
+.navigation-handle:hover {
+  cursor: pointer;
+}
 
-  & + a {
-    margin-inline-end: 3em; /* LTR */
-  }
+.navigation-handle + a {
+  margin-inline-end: 3em; /* LTR */
+}
 
-  &.navigation-icon {
-    position: absolute;
-    z-index: 1;
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    inset-block-end: 0;
-    display: block;
-    block-size: 100%;
-    padding: 0;
-  }
+.navigation-handle.navigation-icon {
+  position: absolute;
+  z-index: 1;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  display: block;
+  block-size: 100%;
+  padding: 0;
 }
