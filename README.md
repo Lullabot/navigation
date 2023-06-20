@@ -1,6 +1,8 @@
 # Drupal core new administration navigation
 This repo contains the initial work for the reworking of the core administration toolbar in Drupal core.
 
+A [work-in-progress demo can be viewed on Tugboat](https://main-okupslwxjsqwu4uj8oubxbukri4akkai.tugboatqa.com).
+
 ## PostCSS setup 
 In your terminal, run `npm run watch` to compile CSS changes.
 
