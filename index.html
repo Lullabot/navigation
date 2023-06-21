@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Toolbar Replacement Demonstration</title>
+  <title>Sidebar Replacement Demonstration</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/style.css">
@@ -10,1196 +10,1221 @@
 <body>
   <div class="navigation navigation__container">
 
-    <!-- Toolbar -->
-    <div class="navigation__toolbar--wrapper">
-
-      <ul class="navigation-menu" data-once="navigation-menu">
-        <li class="menu-item menu-item--expanded level-1">
-          <div class="navigation-box">
-            <a href="/admin/content" class="navigation-icon navigation-icon-system-admin-content"
-              data-drupal-link-system-path="admin/content">
-              Content
-            </a>
-            <button class="navigation-icon navigation-handle">
-              <span class="action">Extend</span> <span class="label">Content</span>
-            </button>
-          </div>
-          <ul class="navigation-menu">
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/node/add" class="navigation-icon" data-drupal-link-system-path="node/add">
-                  Add content
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Add content</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/node/add/article" class="navigation-icon" data-drupal-link-system-path="node/add/article">
-                      Article
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/node/add/page" class="navigation-icon" data-drupal-link-system-path="node/add/page">
-                      Page
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/content/files" class="navigation-icon"
-                  data-drupal-link-system-path="admin/content/files">
-                  Files
-                </a>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item--expanded level-1">
-          <div class="navigation-box">
-            <a href="/admin/structure" class="navigation-icon navigation-icon-system-admin-structure"
-              data-drupal-link-system-path="admin/structure">
-              Structure
-            </a>
-            <button class="navigation-icon navigation-handle">
-              <span class="action">Extend</span> <span class="label">Structure</span>
-            </button>
-          </div>
-          <ul class="navigation-menu">
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/structure/block" class="navigation-icon"
-                  data-drupal-link-system-path="admin/structure/block">
-                  Block layout
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Block layout</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/block/add" class="navigation-icon" data-drupal-link-system-path="block/add">
-                      Add custom block
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/block/block-content/types" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/block/block-content/types">
-                      Block types
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/block/block-content" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/block/block-content"> custom block library
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/structure/types" class="navigation-icon"
-                  data-drupal-link-system-path="admin/structure/types"> content types
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Content types</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/types/add" class="navigation-icon "
-                      data-drupal-link-system-path="admin/structure/types/add">
-                      Add content type
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/types/manage/article" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/types/manage/article">
-                      Article
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">News or Blog Post</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/article/fields" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/article/fields">
-                          Manage fields
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/article/form-display" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/article/form-display">
-                          Manage form display
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/article/display" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/article/display">
-                          Manage display
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/article/permissions" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/article/permissions">
-                          Manage permissions
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/article/delete" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/article/delete"> delete
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/types/manage/page" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/types/manage/page">
-                      Page
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Page</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/page/fields" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/page/fields">
-                          Manage fields
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/page/form-display" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/page/form-display">
-                          Manage form display
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/page/display" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/page/display">
-                          Manage display
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/page/permissions" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/page/permissions">
-                          Manage permissions
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/types/manage/page/delete" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/types/manage/page/delete"> delete
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/structure/display-modes" class="navigation-icon navigation-icon-field-ui-display-mode"
-                  data-drupal-link-system-path="admin/structure/display-modes"> display modes
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Display modes</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/display-modes/form" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/display-modes/form">
-                      Form modes
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Form modes</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/display-modes/form/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/display-modes/form/add">
-                          Add form mode
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/display-modes/view" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/display-modes/view">
-                      View modes
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">View modes</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/display-modes/view/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/display-modes/view/add">
-                          Add view mode
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/structure/menu" class="navigation-icon"
-                  data-drupal-link-system-path="admin/structure/menu">
-                  Menus
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Menus</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/menu/add" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/menu/add">
-                      Add menu
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/menu/manage/admin" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/menu/manage/admin">
-                      Administration
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Administration</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/menu/manage/admin/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/menu/manage/admin/add">
-                          Add link
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/menu/manage/footer" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/menu/manage/footer">
-                      Footer
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Footer</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/menu/manage/footer/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/menu/manage/footer/add">
-                          Add link
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/menu/manage/main" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/menu/manage/main">
-                      Main navigation
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Main navigation</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/menu/manage/main/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/menu/manage/main/add">
-                          Add link
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/menu/manage/secondary-navigation" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation">
-                      Secondary navigation
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Secondary navigation</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/menu/manage/secondary-navigation/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation/add">
-                          Add link
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/menu/manage/secondary-navigation/delete" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation/delete"> delete
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/menu/manage/tools" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/menu/manage/tools">
-                      Tools
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Tools</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/menu/manage/tools/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/menu/manage/tools/add">
-                          Add link
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/menu/manage/account" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/menu/manage/account">
-                      User account menu
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">User account menu</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/structure/menu/manage/account/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/structure/menu/manage/account/add">
-                          Add link
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/structure/taxonomy"
-                  class="navigation-icon navigation-icon-entity-taxonomy-vocabulary-collection"
-                  data-drupal-link-system-path="admin/structure/taxonomy">
-                  Taxonomy
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Taxonomy</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/taxonomy/add" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/taxonomy/add">
-                      Add vocabulary
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/structure/views" class="navigation-icon navigation-icon-entity-view-collection"
-                  data-drupal-link-system-path="admin/structure/views">
-                  Views
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Views</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/views/add" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/views/add">
-                      Add view
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/views/view/content" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/views/view/content"> content
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/views/view/block_content" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/views/view/block_content"> custom block library
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/views/view/media" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/views/view/media">
-                      Media
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/views/view/media_library" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/views/view/media_library">
-                      Media library
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/views/view/taxonomy_term" class="navigation-icon"
-                      data-drupal-link-system-path="admin/structure/views/view/taxonomy_term">
-                      Taxonomy term
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/structure/views/view/watchdog"
-                      class="navigation-icon-admin-navigation-tools-extra-linksentity-user-role-edit-form-anonymous"
-                      data-drupal-link-system-path="admin/structure/views/view/watchdog">
-                      Watchdog
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item--expanded level-1">
-          <div class="navigation-box">
-            <a href="/admin/appearance" class="navigation-icon navigation-icon-system-themes-page"
-              data-drupal-link-system-path="admin/appearance">
-              Appearance
-            </a>
-            <button class="navigation-icon navigation-handle">
-              <span class="action">Extend</span> <span class="label">Appearance</span>
-            </button>
-          </div>
-          <ul class="navigation-menu">
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/appearance/settings" class="navigation-icon"
-                  data-drupal-link-system-path="admin/appearance/settings">
-                  Settings
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Settings</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/appearance/settings/claro" class="navigation-icon"
-                      data-drupal-link-system-path="admin/appearance/settings/claro"> claro
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item--expanded level-1">
-          <div class="navigation-box">
-            <a href="/admin/modules" class="navigation-icon navigation-icon-system-modules-list"
-              data-drupal-link-system-path="admin/modules">
-              Extend
-            </a>
-            <button class="navigation-icon navigation-handle">
-              <span class="action">Extend</span> <span class="label">Extend</span>
-            </button>
-          </div>
-          <ul class="navigation-menu">
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/modules/uninstall" class="navigation-icon"
-                  data-drupal-link-system-path="admin/modules/uninstall">
-                  Uninstall module
-                </a>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item--expanded level-1">
-          <div class="navigation-box">
-            <a href="/admin/config" class="navigation-icon navigation-icon-system-admin-config"
-              data-drupal-link-system-path="admin/config">
-              Configuration
-            </a>
-            <button class="navigation-icon navigation-handle">
-              <span class="action">Extend</span> <span class="label">Configuration</span>
-            </button>
-          </div>
-          <ul class="navigation-menu">
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/people" class="navigation-icon"
-                  data-drupal-link-system-path="admin/config/people">
-                  People
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">People</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/people/accounts" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/people/accounts">
-                      Account settings
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Account settings</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/people/accounts/fields" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/people/accounts/fields">
-                          Manage fields
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/people/accounts/form-display" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/people/accounts/form-display">
-                          Manage form display
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/people/accounts/display" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/people/accounts/display">
-                          Manage display
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/system" class="navigation-icon navigation-icon-system-admin-config-system"
-                  data-drupal-link-system-path="admin/config/system">
-                  System
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">System</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/system/site-information" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/system/site-information">
-                      Basic site settings
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/system/cron" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/system/cron"> cron
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/content" class="navigation-icon"
-                  data-drupal-link-system-path="admin/config/content"> content authoring
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Content authoring</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/content/formats"
-                      class="navigation-icon navigation-icon-filter-admin-overview"
-                      data-drupal-link-system-path="admin/config/content/formats">
-                      Text formats and editors
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/user-interface" class="navigation-icon"
-                  data-drupal-link-system-path="admin/config/user-interface">
-                  User interface
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">User interface</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/user-interface/admin-navigation-search-settings" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/user-interface/admin-navigation-search-settings">
-                      Admin navigation Search
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/user-interface/admin-navigation-tools" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/user-interface/admin-navigation-tools">
-                      Admin navigation Tools
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/user-interface/admin-navigation" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/user-interface/admin-navigation">
-                      Admin navigation
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/user-interface/shortcut" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/user-interface/shortcut">
-                      Shortcuts
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/development"
-                  class="navigation-icon navigation-icon-system-admin-config-development"
-                  data-drupal-link-system-path="admin/config/development"> development
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Development</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/development/performance" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/development/performance">
-                      Performance
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Performance</span>
-                    </button>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/development/logging" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/development/logging">
-                      Logging and errors
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/development/maintenance" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/development/maintenance">
-                      Maintenance mode
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/development/configuration" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/development/configuration"> configuration
-                      synchronization
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Configuration synchronization</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/development/configuration/full/import" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/development/configuration/full/import">
-                          Import
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/development/configuration/full/export" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/development/configuration/full/export">
-                          Export
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/development/configuration/ignore" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/development/configuration/ignore">
-                          Ignore
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/media" class="navigation-icon navigation-icon-system-admin-config-media"
-                  data-drupal-link-system-path="admin/config/media">
-                  Media
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Media</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/media/file-system" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/media/file-system">
-                      File system
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/media/image-styles" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/media/image-styles">
-                      Image styles
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/media/media-library" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/media/media-library">
-                      Media Library settings
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/media/media-settings" class="navigation-icons"
-                      data-drupal-link-system-path="admin/config/media/media-settings">
-                      Media settings
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/media/delete_files" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/media/delete_files"> delete files
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/media/image-toolkit" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/media/image-toolkit">
-                      Image toolkit
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/search" class="navigation-icon navigation-icon-system-admin-config-search"
-                  data-drupal-link-system-path="admin/config/search">
-                  Search and metadata
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Search and metadata</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/search/path" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/search/path">
-                      URL aliases
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/regional" class="navigation-icon navigation-icon-system-admin-config-regional"
-                  data-drupal-link-system-path="admin/config/regional">
-                  Regional and language
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Regional and language</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/regional/settings" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/regional/settings">
-                      Regional settings
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/regional/date-time" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/regional/date-time"> date and time formats
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/regional/date_range_format" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/regional/date_range_format"> date and time range
-                      formats
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/regional/language" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/regional/language">
-                      Languages
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">Languages</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/regional/language/add" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/regional/language/add">
-                          Add language
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/config/regional/language/detection" class="navigation-icon"
-                          data-drupal-link-system-path="admin/config/regional/language/detection"> detection and
-                          selection
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/regional/content-language" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/regional/content-language"> content language
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/config/services" class="navigation-icon navigation-icon-system-admin-config-services"
-                  data-drupal-link-system-path="admin/config/services">
-                  Web services
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Web services</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/config/services/rss-publishing" class="navigation-icon"
-                      data-drupal-link-system-path="admin/config/services/rss-publishing">
-                      RSS publishing
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item--expanded level-1">
-          <div class="navigation-box">
-            <a href="/admin/people" class="navigation-icon navigation-icon-entity-user-collection"
-              data-drupal-link-system-path="admin/people">
-              People
-            </a>
-            <button class="navigation-icon navigation-handle">
-              <span class="action">Extend</span> <span class="label">People</span>
-            </button>
-          </div>
-          <ul class="navigation-menu">
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/people/create" class="navigation-icon"
-                  data-drupal-link-system-path="admin/people/create">
-                  Add user
-                </a>
-              </div>
-            </li>
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/people/permissions" class="navigation-icon"
-                  data-drupal-link-system-path="admin/people/permissions">
-                  Permissions
-                </a>
-              </div>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/people/roles" class="navigation-icon" data-drupal-link-system-path="admin/people/roles">
-                  Roles
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Roles</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/people/roles/add" class="navigation-icon"
-                      data-drupal-link-system-path="admin/people/roles/add">
-                      Add role
-                    </a>
-                  </div>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/people/roles/manage/anonymous" class="navigation-icon"
-                      data-drupal-link-system-path="admin/people/roles/manage/anonymous">
-                      anonymous user
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">anonymous user</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/people/permissions/anonymous" class="navigation-icon"
-                          data-drupal-link-system-path="admin/people/permissions/anonymous">
-                          Edit permissions
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/people/roles/manage/authenticated" class="navigation-icon"
-                      data-drupal-link-system-path="admin/people/roles/manage/authenticated">
-                      authenticated user
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">authenticated user</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/people/permissions/authenticated" class="navigation-icon"
-                          data-drupal-link-system-path="admin/people/permissions/authenticated">
-                          Edit permissions
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item--expanded level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/people/roles/manage/administrator" class="navigation-icon"
-                      data-drupal-link-system-path="admin/people/roles/manage/administrator">
-                      administrator
-                    </a>
-                    <button class="navigation-icon navigation-handle">
-                      <span class="action">Extend</span> <span class="label">administrator</span>
-                    </button>
-                  </div>
-                  <ul class="navigation-menu">
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/people/roles/manage/administrator/delete" class="navigation-icon"
-                          data-drupal-link-system-path="admin/people/roles/manage/administrator/delete"> delete
-                        </a>
-                      </div>
-                    </li>
-                    <li class="menu-item level-4">
-                      <div class="navigation-box">
-                        <a href="/admin/people/permissions/administrator" class="navigation-icon"
-                          data-drupal-link-system-path="admin/people/permissions/administrator">
-                          Edit permissions
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item--expanded level-1">
-          <div class="navigation-box">
-            <a href="/admin/reports" class="navigation-icon navigation-icon-system-admin-reports"
-              data-drupal-link-system-path="admin/reports">
-              Reports
-            </a>
-            <button class="navigation-icon navigation-handle">
-              <span class="action">Extend</span> <span class="label">Reports</span>
-            </button>
-          </div>
-          <ul class="navigation-menu">
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/reports/status" class="navigation-icon"
-                  data-drupal-link-system-path="admin/reports/status">
-                  Status report
-                </a>
-              </div>
-            </li>
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/reports/dblog" class="navigation-icon"
-                  data-drupal-link-system-path="admin/reports/dblog">
-                  Recent log messages
-                </a>
-              </div>
-            </li>
-            <li class="menu-item menu-item--expanded level-2">
-              <div class="navigation-box">
-                <a href="/admin/reports/fields" class="navigation-icon"
-                  data-drupal-link-system-path="admin/reports/fields">
-                  Field list
-                </a>
-                <button class="navigation-icon navigation-handle">
-                  <span class="action">Extend</span> <span class="label">Field list</span>
-                </button>
-              </div>
-              <ul class="navigation-menu">
-                <li class="menu-item level-3">
-                  <div class="navigation-box">
-                    <a href="/admin/reports/fields/views-fields" class="navigation-icon"
-                      data-drupal-link-system-path="admin/reports/fields/views-fields">
-                      Used in views
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/reports/fields/permissions" class="navigation-icon"
-                  data-drupal-link-system-path="admin/reports/fields/permissions">
-                  Report all field permissions
-                </a>
-              </div>
-            </li>
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/reports/access-denied" class="navigation-icon"
-                  data-drupal-link-system-path="admin/reports/access-denied">
-                  Top 'access denied' errors
-                </a>
-              </div>
-            </li>
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/reports/page-not-found" class="navigation-icon"
-                  data-drupal-link-system-path="admin/reports/page-not-found">
-                  Top 'page not found' errors
-                </a>
-              </div>
-            </li>
-            <li class="menu-item level-2">
-              <div class="navigation-box">
-                <a href="/admin/reports/views-plugins" class="navigation-icon"
-                  data-drupal-link-system-path="admin/reports/views-plugins">
-                  Views plugins
-                </a>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-
+    <!-- Sidebar -->
+    <div class="navigation__sidebar" id="navigation-sidebar">
+      <button aria-controls="navigation-sidebar" aria-expanded="false" aria-label="Expand sidebar" id="sidebar-control">
+        <div class="navigation-sidebar__icon"></div>
+      </button>
+      <div class="navigation__sidebar--menu">
+        <h2 class="menu-title" id="menu--editor">Editor</h2>
+        <ul class="navigation-menu" data-once="navigation-menu" aria-labelledby="menu--editor">
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/content" class="navigation-icon navigation-icon-system-admin-content"
+                data-drupal-link-system-path="admin/content">
+                <span>Content</span>
+              </a>
+              <button class="navigation-icon navigation-handle">
+                <span class="action">Extend</span> <span class="label">Content</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/node/add" class="navigation-icon" data-drupal-link-system-path="node/add">
+                    <span>Add content</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Add content</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/node/add/article" class="navigation-icon" data-drupal-link-system-path="node/add/article">
+                        <span>Article</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/node/add/page" class="navigation-icon" data-drupal-link-system-path="node/add/page">
+                        <span>Page</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/content/files" class="navigation-icon"
+                    data-drupal-link-system-path="admin/content/files">
+                    <span>Files</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/appearance" class="navigation-icon navigation-icon-system-themes-page"
+                data-drupal-link-system-path="admin/appearance">
+                <span>Appearance</span>
+              </a>
+              <button class="navigation-icon navigation-handle">
+                <span class="action">Extend</span> <span class="label">Appearance</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/appearance/settings" class="navigation-icon"
+                    data-drupal-link-system-path="admin/appearance/settings">
+                    <span>Settings</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Settings</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/appearance/settings/claro" class="navigation-icon"
+                        data-drupal-link-system-path="admin/appearance/settings/claro">
+                        <span>Claro</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__sidebar--menu">
+        <h2 class="menu-title" id="menu--site-builder">Site Builder</h2>
+        <ul class="navigation-menu" data-once="navigation-menu" aria-labelledby="menu--site-builder">
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/structure" class="navigation-icon navigation-icon-system-admin-structure"
+                data-drupal-link-system-path="admin/structure">
+                <span>Structure</span>
+              </a>
+              <button class="navigation-icon navigation-handle">
+                <span class="action">Extend</span> <span class="label">Structure</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/structure/block" class="navigation-icon"
+                    data-drupal-link-system-path="admin/structure/block">
+                    <span>Block layout</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Block layout</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/block/add" class="navigation-icon" data-drupal-link-system-path="block/add">
+                        <span>Add custom block</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/block/block-content/types" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/block/block-content/types">
+                      <span>Block types</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/block/block-content" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/block/block-content">
+                      <span>Custom block library</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/structure/types" class="navigation-icon"
+                    data-drupal-link-system-path="admin/structure/types">
+                    <span>Content types</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Content types</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/types/add" class="navigation-icon "
+                        data-drupal-link-system-path="admin/structure/types/add">
+                        <span>Add content type</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/types/manage/article" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/types/manage/article">
+                        <span>Article</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">News or Blog Post</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/article/fields" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/article/fields">
+                            <span>Manage fields</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/article/form-display" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/article/form-display">
+                            <span>Manage form display</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/article/display" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/article/display">
+                            <span>Manage display</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/article/permissions" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/article/permissions">
+                            <span>Manage permissions</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/article/delete" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/article/delete">
+                            <span>Delete</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/types/manage/page" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/types/manage/page">
+                        <span>Page</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Page</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/page/fields" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/page/fields">
+                            <span>Manage fields</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/page/form-display" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/page/form-display">
+                            <span>Manage form display</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/page/display" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/page/display">
+                            <span>Manage display</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/page/permissions" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/page/permissions">
+                            <span>Manage permissions</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/types/manage/page/delete" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/types/manage/page/delete">
+                            <span>Delete</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/structure/display-modes" class="navigation-icon navigation-icon-field-ui-display-mode"
+                    data-drupal-link-system-path="admin/structure/display-modes">
+                    <span>Display modes</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Display modes</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/display-modes/form" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/display-modes/form">
+                        <span>Form modes</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Form modes</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/display-modes/form/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/display-modes/form/add">
+                            <span>Add form mode</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/display-modes/view" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/display-modes/view">
+                        <span>View modes</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">View modes</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/display-modes/view/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/display-modes/view/add">
+                            <span>Add view mode</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/structure/menu" class="navigation-icon"
+                    data-drupal-link-system-path="admin/structure/menu">
+                    <span>Menus</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Menus</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/menu/add" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/menu/add">
+                        <span>Add menu</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/menu/manage/admin" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/menu/manage/admin">
+                        <span>Administration</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Administration</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/menu/manage/admin/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/menu/manage/admin/add">
+                            <span>Add link</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/menu/manage/footer" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/menu/manage/footer">
+                        <span>Footer</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Footer</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/menu/manage/footer/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/menu/manage/footer/add">
+                            <span>Add link</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/menu/manage/main" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/menu/manage/main">
+                        <span>Main navigation</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Main navigation</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/menu/manage/main/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/menu/manage/main/add">
+                            <span>Add link</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/menu/manage/secondary-navigation" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation">
+                        <span>Secondary navigation</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Secondary navigation</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/menu/manage/secondary-navigation/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation/add">
+                            <span>Add link</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/menu/manage/secondary-navigation/delete" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation/delete">
+                            <span>Delete</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/menu/manage/tools" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/menu/manage/tools">
+                        <span>Tools</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Tools</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/menu/manage/tools/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/menu/manage/tools/add">
+                            <span>Add link</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/menu/manage/account" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/menu/manage/account">
+                        <span>User account menu</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">User account menu</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/structure/menu/manage/account/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/structure/menu/manage/account/add">
+                            <span>Add link</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/structure/taxonomy"
+                    class="navigation-icon navigation-icon-entity-taxonomy-vocabulary-collection"
+                    data-drupal-link-system-path="admin/structure/taxonomy">
+                    <span>Taxonomy</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Taxonomy</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/taxonomy/add" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/taxonomy/add">
+                        <span>Add vocabulary</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/structure/views" class="navigation-icon navigation-icon-entity-view-collection"
+                    data-drupal-link-system-path="admin/structure/views">
+                    <span>Views</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Views</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/views/add" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/views/add">
+                        <span>Add view</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/views/view/content" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/views/view/content">
+                        <span>Content</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/views/view/block_content" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/views/view/block_content">
+                        <span>Custom block library</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/views/view/media" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/views/view/media">
+                        <span>Media</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/views/view/media_library" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/views/view/media_library">
+                        <span>Media library</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/views/view/taxonomy_term" class="navigation-icon"
+                        data-drupal-link-system-path="admin/structure/views/view/taxonomy_term">
+                        <span>Taxonomy term</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/structure/views/view/watchdog"
+                        class="navigation-icon-admin-navigation-tools-extra-linksentity-user-role-edit-form-anonymous"
+                        data-drupal-link-system-path="admin/structure/views/view/watchdog">
+                        <span>Watchdog</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/modules" class="navigation-icon navigation-icon-system-modules-list"
+                data-drupal-link-system-path="admin/modules">
+                <span>Extend</span>
+              </a>
+              <button class="navigation-icon navigation-handle">
+                <span class="action">Extend</span> <span class="label">Extend</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/modules/uninstall" class="navigation-icon"
+                    data-drupal-link-system-path="admin/modules/uninstall">
+                    <span>Uninstall module</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/config" class="navigation-icon navigation-icon-system-admin-config"
+                data-drupal-link-system-path="admin/config">
+                <span>Configuration</span>
+              </a>
+              <button class="navigation-icon navigation-handle">
+                <span class="action">Extend</span> <span class="label">Configuration</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/people" class="navigation-icon"
+                    data-drupal-link-system-path="admin/config/people">
+                    <span>People</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">People</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/people/accounts" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/people/accounts">
+                        <span>Account settings</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Account settings</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/people/accounts/fields" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/people/accounts/fields">
+                            <span>Manage fields</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/people/accounts/form-display" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/people/accounts/form-display">
+                            <span>Manage form display</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/people/accounts/display" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/people/accounts/display">
+                            <span>Manage display</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/system" class="navigation-icon navigation-icon-system-admin-config-system"
+                    data-drupal-link-system-path="admin/config/system">
+                    <span>System</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">System</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/system/site-information" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/system/site-information">
+                        <span>Basic site settings</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/system/cron" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/system/cron">
+                        <span>Cron</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/content" class="navigation-icon"
+                    data-drupal-link-system-path="admin/config/content">
+                    <span>Content authoring</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Content authoring</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/content/formats"
+                        class="navigation-icon navigation-icon-filter-admin-overview"
+                        data-drupal-link-system-path="admin/config/content/formats">
+                        <span>Text formats and editors</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/user-interface" class="navigation-icon"
+                    data-drupal-link-system-path="admin/config/user-interface">
+                    <span>User interface</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">User interface</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/user-interface/admin-navigation-search-settings" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/user-interface/admin-navigation-search-settings">
+                        <span>Admin navigation Search</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/user-interface/admin-navigation-tools" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/user-interface/admin-navigation-tools">
+                        <span>Admin navigation Tools</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/user-interface/admin-navigation" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/user-interface/admin-navigation">
+                        <span>Admin navigation</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/user-interface/shortcut" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/user-interface/shortcut">
+                        <span>Shortcuts</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/development"
+                    class="navigation-icon navigation-icon-system-admin-config-development"
+                    data-drupal-link-system-path="admin/config/development">
+                    <span>Development</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Development</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/development/performance" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/development/performance">
+                        <span>Performance</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Performance</span>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/development/logging" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/development/logging">
+                        <span>Logging and errors</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/development/maintenance" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/development/maintenance">
+                        <span>Maintenance mode</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/development/configuration" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/development/configuration">
+                        <span>Configuration synchronization</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Configuration synchronization</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/development/configuration/full/import" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/development/configuration/full/import">
+                            <span>Import</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/development/configuration/full/export" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/development/configuration/full/export">
+                            <span>Export</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/development/configuration/ignore" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/development/configuration/ignore">
+                            <span>Ignore</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/media" class="navigation-icon navigation-icon-system-admin-config-media"
+                    data-drupal-link-system-path="admin/config/media">
+                    <span>Media</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Media</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/media/file-system" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/media/file-system">
+                        <span>File system</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/media/image-styles" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/media/image-styles">
+                        <span>Image styles</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/media/media-library" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/media/media-library">
+                        <span>Media Library settings</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/media/media-settings" class="navigation-icons"
+                        data-drupal-link-system-path="admin/config/media/media-settings">
+                        <span>Media settings</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/media/delete_files" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/media/delete_files">
+                        <span>Delete files</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/media/image-toolkit" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/media/image-toolkit">
+                        <span>Image toolkit</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/search" class="navigation-icon navigation-icon-system-admin-config-search"
+                    data-drupal-link-system-path="admin/config/search">
+                    <span>Search and metadata</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Search and metadata</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/search/path" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/search/path">
+                        <span>URL aliases</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/regional" class="navigation-icon navigation-icon-system-admin-config-regional"
+                    data-drupal-link-system-path="admin/config/regional">
+                    <span>Regional and language</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Regional and language</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/regional/settings" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/regional/settings">
+                        <span>Regional settings</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/regional/date-time" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/regional/date-time">
+                        <span>Date and time formats</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/regional/date_range_format" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/regional/date_range_format">
+                        <span>Date and time range formats</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/regional/language" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/regional/language">
+                        <span>Languages</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">Languages</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/regional/language/add" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/regional/language/add">
+                            <span>Add language</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/config/regional/language/detection" class="navigation-icon"
+                            data-drupal-link-system-path="admin/config/regional/language/detection">
+                            <span>Detection and selection</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/regional/content-language" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/regional/content-language">
+                        <span>Content language</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/config/services" class="navigation-icon navigation-icon-system-admin-config-services"
+                    data-drupal-link-system-path="admin/config/services">
+                    <span>Web services</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Web services</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/config/services/rss-publishing" class="navigation-icon"
+                        data-drupal-link-system-path="admin/config/services/rss-publishing">
+                        <span>RSS publishing</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/people" class="navigation-icon navigation-icon-entity-user-collection"
+                data-drupal-link-system-path="admin/people">
+                <span>People</span>
+              </a>
+              <button class="navigation-icon navigation-handle">
+                <span class="action">Extend</span> <span class="label">People</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/people/create" class="navigation-icon"
+                    data-drupal-link-system-path="admin/people/create">
+                    <span>Add user</span>
+                  </a>
+                </div>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/people/permissions" class="navigation-icon"
+                    data-drupal-link-system-path="admin/people/permissions">
+                    <span>Permissions</span>
+                  </a>
+                </div>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/people/roles" class="navigation-icon" data-drupal-link-system-path="admin/people/roles">
+                    <span>Roles</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Roles</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/people/roles/add" class="navigation-icon"
+                        data-drupal-link-system-path="admin/people/roles/add">
+                        <span>Add role</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/people/roles/manage/anonymous" class="navigation-icon"
+                        data-drupal-link-system-path="admin/people/roles/manage/anonymous">
+                        <span>Anonymous user</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">anonymous user</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/people/permissions/anonymous" class="navigation-icon"
+                            data-drupal-link-system-path="admin/people/permissions/anonymous">
+                            <span>Edit permissions</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/people/roles/manage/authenticated" class="navigation-icon"
+                        data-drupal-link-system-path="admin/people/roles/manage/authenticated">
+                        <span>Authenticated user</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">authenticated user</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/people/permissions/authenticated" class="navigation-icon"
+                            data-drupal-link-system-path="admin/people/permissions/authenticated">
+                            <span>Edit permissions</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/people/roles/manage/administrator" class="navigation-icon"
+                        data-drupal-link-system-path="admin/people/roles/manage/administrator">
+                        <span>Administrator</span>
+                      </a>
+                      <button class="navigation-icon navigation-handle">
+                        <span class="action">Extend</span> <span class="label">administrator</span>
+                      </button>
+                    </div>
+                    <ul class="navigation-menu">
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/people/roles/manage/administrator/delete" class="navigation-icon"
+                            data-drupal-link-system-path="admin/people/roles/manage/administrator/delete">
+                            <span>Delete</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="menu-item level-4">
+                        <div class="navigation-box">
+                          <a href="/admin/people/permissions/administrator" class="navigation-icon"
+                            data-drupal-link-system-path="admin/people/permissions/administrator">
+                            <span>Edit permissions</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/reports" class="navigation-icon navigation-icon-system-admin-reports"
+                data-drupal-link-system-path="admin/reports">
+                <span>Reports</span>
+              </a>
+              <button class="navigation-icon navigation-handle">
+                <span class="action">Extend</span> <span class="label">Reports</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/reports/status" class="navigation-icon"
+                    data-drupal-link-system-path="admin/reports/status">
+                    <span>Status report</span>
+                  </a>
+                </div>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/reports/dblog" class="navigation-icon"
+                    data-drupal-link-system-path="admin/reports/dblog">
+                    <span>Recent log messages</span>
+                  </a>
+                </div>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/reports/fields" class="navigation-icon"
+                    data-drupal-link-system-path="admin/reports/fields">
+                    <span>Field list</span>
+                  </a>
+                  <button class="navigation-icon navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Field list</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/reports/fields/views-fields" class="navigation-icon"
+                        data-drupal-link-system-path="admin/reports/fields/views-fields">
+                        <span>Used in views</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/reports/fields/permissions" class="navigation-icon"
+                    data-drupal-link-system-path="admin/reports/fields/permissions">
+                    <span>Report all field permissions</span>
+                  </a>
+                </div>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/reports/access-denied" class="navigation-icon"
+                    data-drupal-link-system-path="admin/reports/access-denied">
+                    <span>Top 'access denied' errors</span>
+                  </a>
+                </div>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/reports/page-not-found" class="navigation-icon"
+                    data-drupal-link-system-path="admin/reports/page-not-found">
+                    <span>Top 'page not found' errors</span>
+                  </a>
+                </div>
+              </li>
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/reports/views-plugins" class="navigation-icon"
+                    data-drupal-link-system-path="admin/reports/views-plugins">
+                    <span>Views plugins</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Page Content -->
-    <div class="navigation__content--wrapper">
+    <div class="navigation__content">
       <!-- Breadcrumb and profile icon -->
       <div class="navigation__content--breadcrumb">
         <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
@@ -1225,6 +1250,7 @@
       </div>
     </div>
   </div>
+  <script src="js/sidebar.js"></script>
 </body>
 
 </html>

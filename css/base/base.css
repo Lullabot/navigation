@@ -20,37 +20,33 @@
   background-color: #F5F8FF;
 }
 
-.navigation__toolbar--wrapper {
+.navigation__sidebar {
   font-size: 1rem;
   box-sizing: border-box;
-  inline-size: 100%;
-  max-inline-size: 240px;
+  inline-size: 260px;
   border-inline-end: 1px solid #aaa;
   background-color: white;
   box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.3333);
+  transition: width .2s ease;
+  overflow-y: scroll;
 }
 
-/* When the configured standard breakpoint is active and the tray is in a
- * vertical position, the tray does not scroll with the page. The contents of
- * the tray scroll within the confines of the viewport.
+.navigation__sidebar.is-active {
+  width: 64px;
+  overflow: hidden;
+}
 
-  @TODO - Add an active class via JS when open to trigger this effect
- */
-.navigation.is-active {
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: auto;
-  block-size: 100%;
-  display: block;
-  inset-inline-start: 0; /* LTR */
+.navigation__sidebar.is-active a.navigation-icon span,
+.navigation__sidebar.is-active .navigation-handle {
+  display: none;
 }
 
 /* Content Area */
-.navigation__content--wrapper {
+.navigation__content {
   inline-size: 100%;
 }
 
-.navigation__content--wrapper .navigation__content--profile-icon {
+.navigation__content .navigation__content--profile-icon {
   display: block;
   inline-size: 18px;
   block-size: 18px;
@@ -63,4 +59,21 @@
 
 .navigation__content--inner {
   margin-inline-end: 20px;
+}
+
+#sidebar-control {
+  margin: 12px;
+}
+
+.menu-title,
+.level-1 > .navigation-box {
+  padding-inline-start: 12px;
+}
+
+#sidebar-control {
+  padding-block-start: 12px;
+}
+
+.menu-title {
+  padding-inline-end: 12px;
 }
