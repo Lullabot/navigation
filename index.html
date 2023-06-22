@@ -11,44 +11,46 @@
   <div class="navigation navigation__container">
 
     <!-- Sidebar -->
-    <div class="navigation__sidebar" id="navigation-sidebar">
-      <button aria-controls="navigation-sidebar" aria-expanded="false" aria-label="Expand sidebar" id="sidebar-control">
+    <div class="navigation__sidebar is-active" id="navigation-sidebar">
+      <button aria-controls="navigation-sidebar" aria-expanded="true" aria-label="Collapse sidebar" id="sidebar-control">
         <div class="navigation-sidebar__icon"></div>
       </button>
       <div class="navigation__sidebar--menu">
-        <h2 class="menu-title" id="menu--editor">Editor</h2>
-        <ul class="navigation-menu" data-once="navigation-menu" aria-labelledby="menu--editor">
+        <!-- Comment out title for now, until we implement multiple menus -->
+        <!-- <h2 class="menu-title" id="menu--site-builder">Content Editor</h2> -->
+        <ul class="navigation-menu" data-once="navigation-menu" aria-labelledby="menu--site-builder">
           <li class="menu-item level-1">
             <div class="navigation-box">
-              <a href="/admin/content" class="navigation-icon navigation-icon-system-admin-content"
+              <a href="/admin/content" class="navigation-link navigation-link--has-icon"
                 data-drupal-link-system-path="admin/content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><g><path fill="currentColor" d="M12.502 7h-5c-.276 0-.502-.225-.502-.5v-5c0-.275-.225-.5-.5-.5h-3c-.275 0-.5.225-.5.5v12.029c0 .275.225.5.5.5h9.002c.275 0 .5-.225.5-.5v-6.029c0-.275-.225-.5-.5-.5zM8.502 6h4c.275 0 .34-.159.146-.354l-4.293-4.292c-.195-.195-.353-.129-.353.146v4c0 .275.225.5.5.5z"/></g></svg>
                 <span>Content</span>
               </a>
-              <button class="navigation-icon navigation-handle">
+              <button class="navigation-handle">
                 <span class="action">Extend</span> <span class="label">Content</span>
               </button>
             </div>
             <ul class="navigation-menu">
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/node/add" class="navigation-icon" data-drupal-link-system-path="node/add">
+                  <a href="/node/add" class="navigation-link" data-drupal-link-system-path="node/add">
                     <span>Add content</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Add content</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/node/add/article" class="navigation-icon" data-drupal-link-system-path="node/add/article">
+                      <a href="/node/add/article" class="navigation-link" data-drupal-link-system-path="node/add/article">
                         <span>Article</span>
                       </a>
                     </div>
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/node/add/page" class="navigation-icon" data-drupal-link-system-path="node/add/page">
+                      <a href="/node/add/page" class="navigation-link" data-drupal-link-system-path="node/add/page">
                         <span>Page</span>
                       </a>
                     </div>
@@ -57,8 +59,7 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/content/files" class="navigation-icon"
-                    data-drupal-link-system-path="admin/content/files">
+                  <a href="/admin/content/files" class="navigation-link" data-drupal-link-system-path="admin/content/files">
                     <span>Files</span>
                   </a>
                 </div>
@@ -67,75 +68,37 @@
           </li>
           <li class="menu-item level-1">
             <div class="navigation-box">
-              <a href="/admin/appearance" class="navigation-icon navigation-icon-system-themes-page"
-                data-drupal-link-system-path="admin/appearance">
-                <span>Appearance</span>
-              </a>
-              <button class="navigation-icon navigation-handle">
-                <span class="action">Extend</span> <span class="label">Appearance</span>
-              </button>
-            </div>
-            <ul class="navigation-menu">
-              <li class="menu-item level-2">
-                <div class="navigation-box">
-                  <a href="/admin/appearance/settings" class="navigation-icon"
-                    data-drupal-link-system-path="admin/appearance/settings">
-                    <span>Settings</span>
-                  </a>
-                  <button class="navigation-icon navigation-handle">
-                    <span class="action">Extend</span> <span class="label">Settings</span>
-                  </button>
-                </div>
-                <ul class="navigation-menu">
-                  <li class="menu-item level-3">
-                    <div class="navigation-box">
-                      <a href="/admin/appearance/settings/claro" class="navigation-icon"
-                        data-drupal-link-system-path="admin/appearance/settings/claro">
-                        <span>Claro</span>
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="navigation__sidebar--menu">
-        <h2 class="menu-title" id="menu--site-builder">Site Builder</h2>
-        <ul class="navigation-menu" data-once="navigation-menu" aria-labelledby="menu--site-builder">
-          <li class="menu-item level-1">
-            <div class="navigation-box">
-              <a href="/admin/structure" class="navigation-icon navigation-icon-system-admin-structure"
+              <a href="/admin/structure" class="navigation-link navigation-link--has-icon"
                 data-drupal-link-system-path="admin/structure">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="currentColor" d="M15.002,11.277c0-0.721,0-1.471,0-2.014c0-1.456-0.824-2.25-2.25-2.25c-1.428,0-3.5,0-3.5,0c-0.139,0-0.25-0.112-0.25-0.25v-2.04c0.596-0.346,1-0.984,1-1.723c0-1.104-0.895-2-2-2C6.896,1,6,1.896,6,3c0,0.738,0.405,1.376,1,1.722v2.042c0,0.138-0.112,0.25-0.25,0.25c0,0-2.138,0-3.5,0S1,7.932,1,9.266c0,0.521,0,1.277,0,2.012c-0.595,0.353-1,0.984-1,1.729c0,1.104,0.896,2,2,2s2-0.896,2-2c0-0.732-0.405-1.377-1-1.729V9.266c0-0.139,0.112-0.25,0.25-0.25h3.536C6.904,9.034,7,9.126,7,9.25v2.027C6.405,11.624,6,12.26,6,13c0,1.104,0.896,2,2.002,2c1.105,0,2-0.896,2-2c0-0.738-0.404-1.376-1-1.723V9.25c0-0.124,0.098-0.216,0.215-0.234h3.535c0.137,0,0.25,0.111,0.25,0.25v2.012c-0.596,0.353-1,0.984-1,1.729c0,1.104,0.896,2,2,2s2-0.896,2-2C16.002,12.262,15.598,11.623,15.002,11.277z"/></svg>
                 <span>Structure</span>
               </a>
-              <button class="navigation-icon navigation-handle">
+              <button class="navigation-handle">
                 <span class="action">Extend</span> <span class="label">Structure</span>
               </button>
             </div>
             <ul class="navigation-menu">
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/structure/block" class="navigation-icon"
+                  <a href="/admin/structure/block" class="navigation-link"
                     data-drupal-link-system-path="admin/structure/block">
                     <span>Block layout</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Block layout</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/block/add" class="navigation-icon" data-drupal-link-system-path="block/add">
+                      <a href="/block/add" class="navigation-link" data-drupal-link-system-path="block/add">
                         <span>Add custom block</span>
                       </a>
                     </div>
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/block/block-content/types" class="navigation-icon"
+                      <a href="/admin/structure/block/block-content/types" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/block/block-content/types">
                       <span>Block types</span>
                       </a>
@@ -143,7 +106,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/block/block-content" class="navigation-icon"
+                      <a href="/admin/structure/block/block-content" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/block/block-content">
                       <span>Custom block library</span>
                       </a>
@@ -153,18 +116,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/structure/types" class="navigation-icon"
+                  <a href="/admin/structure/types" class="navigation-link"
                     data-drupal-link-system-path="admin/structure/types">
                     <span>Content types</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Content types</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/types/add" class="navigation-icon "
+                      <a href="/admin/structure/types/add" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/types/add">
                         <span>Add content type</span>
                       </a>
@@ -172,18 +135,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/types/manage/article" class="navigation-icon"
+                      <a href="/admin/structure/types/manage/article" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/types/manage/article">
                         <span>Article</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">News or Blog Post</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/article/fields" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/article/fields" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/article/fields">
                             <span>Manage fields</span>
                           </a>
@@ -191,7 +154,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/article/form-display" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/article/form-display" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/article/form-display">
                             <span>Manage form display</span>
                           </a>
@@ -199,7 +162,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/article/display" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/article/display" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/article/display">
                             <span>Manage display</span>
                           </a>
@@ -207,7 +170,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/article/permissions" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/article/permissions" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/article/permissions">
                             <span>Manage permissions</span>
                           </a>
@@ -215,7 +178,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/article/delete" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/article/delete" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/article/delete">
                             <span>Delete</span>
                           </a>
@@ -225,18 +188,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/types/manage/page" class="navigation-icon"
+                      <a href="/admin/structure/types/manage/page" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/types/manage/page">
                         <span>Page</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Page</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/page/fields" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/page/fields" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/page/fields">
                             <span>Manage fields</span>
                           </a>
@@ -244,7 +207,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/page/form-display" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/page/form-display" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/page/form-display">
                             <span>Manage form display</span>
                           </a>
@@ -252,7 +215,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/page/display" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/page/display" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/page/display">
                             <span>Manage display</span>
                           </a>
@@ -260,7 +223,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/page/permissions" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/page/permissions" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/page/permissions">
                             <span>Manage permissions</span>
                           </a>
@@ -268,7 +231,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/types/manage/page/delete" class="navigation-icon"
+                          <a href="/admin/structure/types/manage/page/delete" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/types/manage/page/delete">
                             <span>Delete</span>
                           </a>
@@ -280,29 +243,29 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/structure/display-modes" class="navigation-icon navigation-icon-field-ui-display-mode"
+                  <a href="/admin/structure/display-modes" class="navigation-link"
                     data-drupal-link-system-path="admin/structure/display-modes">
                     <span>Display modes</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Display modes</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/display-modes/form" class="navigation-icon"
+                      <a href="/admin/structure/display-modes/form" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/display-modes/form">
                         <span>Form modes</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Form modes</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/display-modes/form/add" class="navigation-icon"
+                          <a href="/admin/structure/display-modes/form/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/display-modes/form/add">
                             <span>Add form mode</span>
                           </a>
@@ -312,18 +275,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/display-modes/view" class="navigation-icon"
+                      <a href="/admin/structure/display-modes/view" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/display-modes/view">
                         <span>View modes</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">View modes</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/display-modes/view/add" class="navigation-icon"
+                          <a href="/admin/structure/display-modes/view/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/display-modes/view/add">
                             <span>Add view mode</span>
                           </a>
@@ -335,18 +298,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/structure/menu" class="navigation-icon"
+                  <a href="/admin/structure/menu" class="navigation-link"
                     data-drupal-link-system-path="admin/structure/menu">
                     <span>Menus</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Menus</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/menu/add" class="navigation-icon"
+                      <a href="/admin/structure/menu/add" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/menu/add">
                         <span>Add menu</span>
                       </a>
@@ -354,18 +317,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/menu/manage/admin" class="navigation-icon"
+                      <a href="/admin/structure/menu/manage/admin" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/menu/manage/admin">
                         <span>Administration</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Administration</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/menu/manage/admin/add" class="navigation-icon"
+                          <a href="/admin/structure/menu/manage/admin/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/menu/manage/admin/add">
                             <span>Add link</span>
                           </a>
@@ -375,18 +338,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/menu/manage/footer" class="navigation-icon"
+                      <a href="/admin/structure/menu/manage/footer" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/menu/manage/footer">
                         <span>Footer</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Footer</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/menu/manage/footer/add" class="navigation-icon"
+                          <a href="/admin/structure/menu/manage/footer/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/menu/manage/footer/add">
                             <span>Add link</span>
                           </a>
@@ -396,18 +359,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/menu/manage/main" class="navigation-icon"
+                      <a href="/admin/structure/menu/manage/main" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/menu/manage/main">
                         <span>Main navigation</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Main navigation</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/menu/manage/main/add" class="navigation-icon"
+                          <a href="/admin/structure/menu/manage/main/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/menu/manage/main/add">
                             <span>Add link</span>
                           </a>
@@ -417,18 +380,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/menu/manage/secondary-navigation" class="navigation-icon"
+                      <a href="/admin/structure/menu/manage/secondary-navigation" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation">
                         <span>Secondary navigation</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Secondary navigation</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/menu/manage/secondary-navigation/add" class="navigation-icon"
+                          <a href="/admin/structure/menu/manage/secondary-navigation/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation/add">
                             <span>Add link</span>
                           </a>
@@ -436,7 +399,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/menu/manage/secondary-navigation/delete" class="navigation-icon"
+                          <a href="/admin/structure/menu/manage/secondary-navigation/delete" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/menu/manage/secondary-navigation/delete">
                             <span>Delete</span>
                           </a>
@@ -446,18 +409,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/menu/manage/tools" class="navigation-icon"
+                      <a href="/admin/structure/menu/manage/tools" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/menu/manage/tools">
                         <span>Tools</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Tools</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/menu/manage/tools/add" class="navigation-icon"
+                          <a href="/admin/structure/menu/manage/tools/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/menu/manage/tools/add">
                             <span>Add link</span>
                           </a>
@@ -467,18 +430,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/menu/manage/account" class="navigation-icon"
+                      <a href="/admin/structure/menu/manage/account" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/menu/manage/account">
                         <span>User account menu</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">User account menu</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/structure/menu/manage/account/add" class="navigation-icon"
+                          <a href="/admin/structure/menu/manage/account/add" class="navigation-link"
                             data-drupal-link-system-path="admin/structure/menu/manage/account/add">
                             <span>Add link</span>
                           </a>
@@ -490,19 +453,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/structure/taxonomy"
-                    class="navigation-icon navigation-icon-entity-taxonomy-vocabulary-collection"
+                  <a href="/admin/structure/taxonomy" class="navigation-link"
                     data-drupal-link-system-path="admin/structure/taxonomy">
                     <span>Taxonomy</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Taxonomy</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/taxonomy/add" class="navigation-icon"
+                      <a href="/admin/structure/taxonomy/add" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/taxonomy/add">
                         <span>Add vocabulary</span>
                       </a>
@@ -512,18 +474,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/structure/views" class="navigation-icon navigation-icon-entity-view-collection"
+                  <a href="/admin/structure/views" class="navigation-link"
                     data-drupal-link-system-path="admin/structure/views">
                     <span>Views</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Views</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/views/add" class="navigation-icon"
+                      <a href="/admin/structure/views/add" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/views/add">
                         <span>Add view</span>
                       </a>
@@ -531,7 +493,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/views/view/content" class="navigation-icon"
+                      <a href="/admin/structure/views/view/content" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/views/view/content">
                         <span>Content</span>
                       </a>
@@ -539,7 +501,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/views/view/block_content" class="navigation-icon"
+                      <a href="/admin/structure/views/view/block_content" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/views/view/block_content">
                         <span>Custom block library</span>
                       </a>
@@ -547,7 +509,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/views/view/media" class="navigation-icon"
+                      <a href="/admin/structure/views/view/media" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/views/view/media">
                         <span>Media</span>
                       </a>
@@ -555,7 +517,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/views/view/media_library" class="navigation-icon"
+                      <a href="/admin/structure/views/view/media_library" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/views/view/media_library">
                         <span>Media library</span>
                       </a>
@@ -563,7 +525,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/views/view/taxonomy_term" class="navigation-icon"
+                      <a href="/admin/structure/views/view/taxonomy_term" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/views/view/taxonomy_term">
                         <span>Taxonomy term</span>
                       </a>
@@ -571,8 +533,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/structure/views/view/watchdog"
-                        class="navigation-icon-admin-navigation-tools-extra-linksentity-user-role-edit-form-anonymous"
+                      <a href="/admin/structure/views/view/watchdog" class="navigation-link"
                         data-drupal-link-system-path="admin/structure/views/view/watchdog">
                         <span>Watchdog</span>
                       </a>
@@ -584,18 +545,54 @@
           </li>
           <li class="menu-item level-1">
             <div class="navigation-box">
-              <a href="/admin/modules" class="navigation-icon navigation-icon-system-modules-list"
+              <a href="/admin/appearance" class="navigation-link navigation-link--has-icon"
+                data-drupal-link-system-path="admin/appearance">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="currentColor" d="M8.184 7.928l-1.905 1.983-3.538-2.436 4.714-4.713 2.623 3.183-1.894 1.983zm-1.746-7.523c-.236-.416-.803-.649-1.346.083-.259.349-4.727 4.764-4.91 4.983-.182.218-.294.721.044.976.34.258 5.611 3.933 5.611 3.933l-.225.229c.7.729.816.854 1.046.863.75.016 2.035-1.457 2.578-.854.541.604 3.537 3.979 3.537 3.979.51.531 1.305.559 1.815.041.521-.521.541-1.311.025-1.848 0 0-2.742-2.635-3.904-3.619-.578-.479.869-2.051.854-2.839-.008-.238-.125-.361-.823-1.095l-.22.243c0 .003-3.846-4.659-4.082-5.075z"/></svg>
+                <span>Appearance</span>
+              </a>
+              <button class="navigation-handle">
+                <span class="action">Extend</span> <span class="label">Appearance</span>
+              </button>
+            </div>
+            <ul class="navigation-menu">
+              <li class="menu-item level-2">
+                <div class="navigation-box">
+                  <a href="/admin/appearance/settings" class="navigation-link"
+                    data-drupal-link-system-path="admin/appearance/settings">
+                    <span>Settings</span>
+                  </a>
+                  <button class="navigation-handle">
+                    <span class="action">Extend</span> <span class="label">Settings</span>
+                  </button>
+                </div>
+                <ul class="navigation-menu">
+                  <li class="menu-item level-3">
+                    <div class="navigation-box">
+                      <a href="/admin/appearance/settings/claro" class="navigation-link"
+                        data-drupal-link-system-path="admin/appearance/settings/claro">
+                        <span>Claro</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item level-1">
+            <div class="navigation-box">
+              <a href="/admin/modules" class="navigation-link navigation-link--has-icon"
                 data-drupal-link-system-path="admin/modules">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="currentColor" d="M11.002 11v2.529c0 .275-.225.471-.5.471h-3c-.827 0-1.112-.754-.604-1.316l.81-.725c.509-.562.513-1.461-.097-2.01-.383-.344-1.027-.728-2.111-.728s-1.727.386-2.109.731c-.609.549-.606 1.45-.097 2.015l.808.717c.509.562.223 1.316-.602 1.316h-3c-.276 0-.5-.193-.5-.471v-9.029c0-.276.224-.5.5-.5h3c.825 0 1.111-.768.602-1.332l-.808-.73c-.51-.563-.513-1.465.097-2.014.382-.344 1.025-.731 2.109-.731s1.728.387 2.111.731c.608.548.606 1.45.097 2.014l-.81.73c-.509.564-.223 1.332.603 1.332h3c.274 0 .5.224.5.5v2.5c0 .825.642 1.111 1.233.602l.771-.808c.599-.51 1.547-.513 2.127.097.364.383.772 1.025.772 2.109s-.408 1.727-.771 2.109c-.58.604-1.529.604-2.127.097l-.77-.808c-.593-.509-1.234-.223-1.234.602z"/></svg>
                 <span>Extend</span>
               </a>
-              <button class="navigation-icon navigation-handle">
+              <button class="navigation-handle">
                 <span class="action">Extend</span> <span class="label">Extend</span>
               </button>
             </div>
             <ul class="navigation-menu">
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/modules/uninstall" class="navigation-icon"
+                  <a href="/admin/modules/uninstall" class="navigation-link"
                     data-drupal-link-system-path="admin/modules/uninstall">
                     <span>Uninstall module</span>
                   </a>
@@ -605,40 +602,41 @@
           </li>
           <li class="menu-item level-1">
             <div class="navigation-box">
-              <a href="/admin/config" class="navigation-icon navigation-icon-system-admin-config"
+              <a href="/admin/config" class="navigation-link navigation-link--has-icon"
                 data-drupal-link-system-path="admin/config">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="currentColor" d="M14.416 11.586l-.01-.008v-.001l-5.656-5.656c.15-.449.252-.921.252-1.421 0-2.485-2.016-4.5-4.502-4.5-.505 0-.981.102-1.434.255l2.431 2.431-.588 2.196-2.196.588-2.445-2.445c-.162.464-.268.956-.268 1.475 0 2.486 2.014 4.5 4.5 4.5.5 0 .972-.102 1.421-.251l5.667 5.665c.781.781 2.047.781 2.828 0s.781-2.047 0-2.828z"/></svg>
                 <span>Configuration</span>
               </a>
-              <button class="navigation-icon navigation-handle">
+              <button class="navigation-handle">
                 <span class="action">Extend</span> <span class="label">Configuration</span>
               </button>
             </div>
             <ul class="navigation-menu">
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/people" class="navigation-icon"
+                  <a href="/admin/config/people" class="navigation-link"
                     data-drupal-link-system-path="admin/config/people">
                     <span>People</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">People</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/people/accounts" class="navigation-icon"
+                      <a href="/admin/config/people/accounts" class="navigation-link"
                         data-drupal-link-system-path="admin/config/people/accounts">
                         <span>Account settings</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Account settings</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/people/accounts/fields" class="navigation-icon"
+                          <a href="/admin/config/people/accounts/fields" class="navigation-link"
                             data-drupal-link-system-path="admin/config/people/accounts/fields">
                             <span>Manage fields</span>
                           </a>
@@ -646,7 +644,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/people/accounts/form-display" class="navigation-icon"
+                          <a href="/admin/config/people/accounts/form-display" class="navigation-link"
                             data-drupal-link-system-path="admin/config/people/accounts/form-display">
                             <span>Manage form display</span>
                           </a>
@@ -654,7 +652,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/people/accounts/display" class="navigation-icon"
+                          <a href="/admin/config/people/accounts/display" class="navigation-link"
                             data-drupal-link-system-path="admin/config/people/accounts/display">
                             <span>Manage display</span>
                           </a>
@@ -666,18 +664,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/system" class="navigation-icon navigation-icon-system-admin-config-system"
+                  <a href="/admin/config/system" class="navigation-link"
                     data-drupal-link-system-path="admin/config/system">
                     <span>System</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">System</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/system/site-information" class="navigation-icon"
+                      <a href="/admin/config/system/site-information" class="navigation-link"
                         data-drupal-link-system-path="admin/config/system/site-information">
                         <span>Basic site settings</span>
                       </a>
@@ -685,7 +683,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/system/cron" class="navigation-icon"
+                      <a href="/admin/config/system/cron" class="navigation-link"
                         data-drupal-link-system-path="admin/config/system/cron">
                         <span>Cron</span>
                       </a>
@@ -695,19 +693,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/content" class="navigation-icon"
+                  <a href="/admin/config/content" class="navigation-link"
                     data-drupal-link-system-path="admin/config/content">
                     <span>Content authoring</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Content authoring</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/content/formats"
-                        class="navigation-icon navigation-icon-filter-admin-overview"
+                      <a href="/admin/config/content/formats" class="navigation-link"
                         data-drupal-link-system-path="admin/config/content/formats">
                         <span>Text formats and editors</span>
                       </a>
@@ -717,18 +714,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/user-interface" class="navigation-icon"
+                  <a href="/admin/config/user-interface" class="navigation-link"
                     data-drupal-link-system-path="admin/config/user-interface">
                     <span>User interface</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">User interface</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/user-interface/admin-navigation-search-settings" class="navigation-icon"
+                      <a href="/admin/config/user-interface/admin-navigation-search-settings" class="navigation-link"
                         data-drupal-link-system-path="admin/config/user-interface/admin-navigation-search-settings">
                         <span>Admin navigation Search</span>
                       </a>
@@ -736,7 +733,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/user-interface/admin-navigation-tools" class="navigation-icon"
+                      <a href="/admin/config/user-interface/admin-navigation-tools" class="navigation-link"
                         data-drupal-link-system-path="admin/config/user-interface/admin-navigation-tools">
                         <span>Admin navigation Tools</span>
                       </a>
@@ -744,7 +741,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/user-interface/admin-navigation" class="navigation-icon"
+                      <a href="/admin/config/user-interface/admin-navigation" class="navigation-link"
                         data-drupal-link-system-path="admin/config/user-interface/admin-navigation">
                         <span>Admin navigation</span>
                       </a>
@@ -752,7 +749,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/user-interface/shortcut" class="navigation-icon"
+                      <a href="/admin/config/user-interface/shortcut" class="navigation-link"
                         data-drupal-link-system-path="admin/config/user-interface/shortcut">
                         <span>Shortcuts</span>
                       </a>
@@ -762,30 +759,29 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/development"
-                    class="navigation-icon navigation-icon-system-admin-config-development"
+                  <a href="/admin/config/development" class="navigation-link"
                     data-drupal-link-system-path="admin/config/development">
                     <span>Development</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Development</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/development/performance" class="navigation-icon"
+                      <a href="/admin/config/development/performance" class="navigation-link"
                         data-drupal-link-system-path="admin/config/development/performance">
                         <span>Performance</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Performance</span>
                       </button>
                     </div>
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/development/logging" class="navigation-icon"
+                      <a href="/admin/config/development/logging" class="navigation-link"
                         data-drupal-link-system-path="admin/config/development/logging">
                         <span>Logging and errors</span>
                       </a>
@@ -793,7 +789,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/development/maintenance" class="navigation-icon"
+                      <a href="/admin/config/development/maintenance" class="navigation-link"
                         data-drupal-link-system-path="admin/config/development/maintenance">
                         <span>Maintenance mode</span>
                       </a>
@@ -801,18 +797,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/development/configuration" class="navigation-icon"
+                      <a href="/admin/config/development/configuration" class="navigation-link"
                         data-drupal-link-system-path="admin/config/development/configuration">
                         <span>Configuration synchronization</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Configuration synchronization</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/development/configuration/full/import" class="navigation-icon"
+                          <a href="/admin/config/development/configuration/full/import" class="navigation-link"
                             data-drupal-link-system-path="admin/config/development/configuration/full/import">
                             <span>Import</span>
                           </a>
@@ -820,7 +816,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/development/configuration/full/export" class="navigation-icon"
+                          <a href="/admin/config/development/configuration/full/export" class="navigation-link"
                             data-drupal-link-system-path="admin/config/development/configuration/full/export">
                             <span>Export</span>
                           </a>
@@ -828,7 +824,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/development/configuration/ignore" class="navigation-icon"
+                          <a href="/admin/config/development/configuration/ignore" class="navigation-link"
                             data-drupal-link-system-path="admin/config/development/configuration/ignore">
                             <span>Ignore</span>
                           </a>
@@ -840,18 +836,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/media" class="navigation-icon navigation-icon-system-admin-config-media"
+                  <a href="/admin/config/media" class="navigation-link"
                     data-drupal-link-system-path="admin/config/media">
                     <span>Media</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Media</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/media/file-system" class="navigation-icon"
+                      <a href="/admin/config/media/file-system" class="navigation-link"
                         data-drupal-link-system-path="admin/config/media/file-system">
                         <span>File system</span>
                       </a>
@@ -859,7 +855,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/media/image-styles" class="navigation-icon"
+                      <a href="/admin/config/media/image-styles" class="navigation-link"
                         data-drupal-link-system-path="admin/config/media/image-styles">
                         <span>Image styles</span>
                       </a>
@@ -867,7 +863,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/media/media-library" class="navigation-icon"
+                      <a href="/admin/config/media/media-library" class="navigation-link"
                         data-drupal-link-system-path="admin/config/media/media-library">
                         <span>Media Library settings</span>
                       </a>
@@ -875,7 +871,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/media/media-settings" class="navigation-icons"
+                      <a href="/admin/config/media/media-settings" class="navigation-link"
                         data-drupal-link-system-path="admin/config/media/media-settings">
                         <span>Media settings</span>
                       </a>
@@ -883,7 +879,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/media/delete_files" class="navigation-icon"
+                      <a href="/admin/config/media/delete_files" class="navigation-link"
                         data-drupal-link-system-path="admin/config/media/delete_files">
                         <span>Delete files</span>
                       </a>
@@ -891,7 +887,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/media/image-toolkit" class="navigation-icon"
+                      <a href="/admin/config/media/image-toolkit" class="navigation-link"
                         data-drupal-link-system-path="admin/config/media/image-toolkit">
                         <span>Image toolkit</span>
                       </a>
@@ -901,18 +897,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/search" class="navigation-icon navigation-icon-system-admin-config-search"
+                  <a href="/admin/config/search" class="navigation-link"
                     data-drupal-link-system-path="admin/config/search">
                     <span>Search and metadata</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Search and metadata</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/search/path" class="navigation-icon"
+                      <a href="/admin/config/search/path" class="navigation-link"
                         data-drupal-link-system-path="admin/config/search/path">
                         <span>URL aliases</span>
                       </a>
@@ -922,18 +918,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/regional" class="navigation-icon navigation-icon-system-admin-config-regional"
+                  <a href="/admin/config/regional" class="navigation-link"
                     data-drupal-link-system-path="admin/config/regional">
                     <span>Regional and language</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Regional and language</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/regional/settings" class="navigation-icon"
+                      <a href="/admin/config/regional/settings" class="navigation-link"
                         data-drupal-link-system-path="admin/config/regional/settings">
                         <span>Regional settings</span>
                       </a>
@@ -941,7 +937,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/regional/date-time" class="navigation-icon"
+                      <a href="/admin/config/regional/date-time" class="navigation-link"
                         data-drupal-link-system-path="admin/config/regional/date-time">
                         <span>Date and time formats</span>
                       </a>
@@ -949,7 +945,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/regional/date_range_format" class="navigation-icon"
+                      <a href="/admin/config/regional/date_range_format" class="navigation-link"
                         data-drupal-link-system-path="admin/config/regional/date_range_format">
                         <span>Date and time range formats</span>
                       </a>
@@ -957,18 +953,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/regional/language" class="navigation-icon"
+                      <a href="/admin/config/regional/language" class="navigation-link"
                         data-drupal-link-system-path="admin/config/regional/language">
                         <span>Languages</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">Languages</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/regional/language/add" class="navigation-icon"
+                          <a href="/admin/config/regional/language/add" class="navigation-link"
                             data-drupal-link-system-path="admin/config/regional/language/add">
                             <span>Add language</span>
                           </a>
@@ -976,7 +972,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/config/regional/language/detection" class="navigation-icon"
+                          <a href="/admin/config/regional/language/detection" class="navigation-link"
                             data-drupal-link-system-path="admin/config/regional/language/detection">
                             <span>Detection and selection</span>
                           </a>
@@ -986,7 +982,7 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/regional/content-language" class="navigation-icon"
+                      <a href="/admin/config/regional/content-language" class="navigation-link"
                         data-drupal-link-system-path="admin/config/regional/content-language">
                         <span>Content language</span>
                       </a>
@@ -996,18 +992,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/config/services" class="navigation-icon navigation-icon-system-admin-config-services"
+                  <a href="/admin/config/services" class="navigation-link"
                     data-drupal-link-system-path="admin/config/services">
                     <span>Web services</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Web services</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/config/services/rss-publishing" class="navigation-icon"
+                      <a href="/admin/config/services/rss-publishing" class="navigation-link"
                         data-drupal-link-system-path="admin/config/services/rss-publishing">
                         <span>RSS publishing</span>
                       </a>
@@ -1019,18 +1015,19 @@
           </li>
           <li class="menu-item level-1">
             <div class="navigation-box">
-              <a href="/admin/people" class="navigation-icon navigation-icon-entity-user-collection"
+              <a href="/admin/people" class="navigation-link navigation-link--has-icon"
                 data-drupal-link-system-path="admin/people">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><g><path fill="currentColor" d="M6.722 11.291l.451-.17-.165-.32c-.536-1.039-.685-1.934-.761-2.672-.082-.808-.144-2.831 1.053-4.189.244-.278.493-.493.743-.675.012-.826-.135-1.766-.646-2.345-.618-.7-1.4-.787-1.4-.787l-.497-.055-.498.055s-.783.087-1.398.787c-.617.702-.717 1.948-.625 2.855.06.583.17 1.263.574 2.05.274.533.341.617.355 1.01.022.595.027 1.153-.671 1.538-.697.383-1.564.508-2.403 1.088-.596.41-.709 1.033-.78 1.459l-.051.41c-.029.273.173.498.448.498h5.012c.457-.24.89-.402 1.259-.537zM5.064 15.096c.07-.427.184-1.05.78-1.46.838-.581 1.708-.706 2.404-1.089.699-.385.693-.943.672-1.537-.014-.393-.08-.477-.354-1.01-.406-.787-.515-1.467-.576-2.049-.093-.909.008-2.155.625-2.856.615-.7 1.398-.787 1.398-.787l.492-.055h.002l.496.055s.781.087 1.396.787c.615.701.72 1.947.623 2.855-.062.583-.172 1.262-.571 2.049-.271.533-.341.617-.354 1.01-.021.595-.062 1.22.637 1.604.697.385 1.604.527 2.438 1.104.923.641.822 1.783.822 1.783-.022.275-.269.5-.542.5h-9.991c-.275 0-.477-.223-.448-.496l.051-.408z"/></g></svg>
                 <span>People</span>
               </a>
-              <button class="navigation-icon navigation-handle">
+              <button class="navigation-handle">
                 <span class="action">Extend</span> <span class="label">People</span>
               </button>
             </div>
             <ul class="navigation-menu">
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/people/create" class="navigation-icon"
+                  <a href="/admin/people/create" class="navigation-link"
                     data-drupal-link-system-path="admin/people/create">
                     <span>Add user</span>
                   </a>
@@ -1038,7 +1035,7 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/people/permissions" class="navigation-icon"
+                  <a href="/admin/people/permissions" class="navigation-link"
                     data-drupal-link-system-path="admin/people/permissions">
                     <span>Permissions</span>
                   </a>
@@ -1046,17 +1043,17 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/people/roles" class="navigation-icon" data-drupal-link-system-path="admin/people/roles">
+                  <a href="/admin/people/roles" class="navigation-link" data-drupal-link-system-path="admin/people/roles">
                     <span>Roles</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Roles</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/people/roles/add" class="navigation-icon"
+                      <a href="/admin/people/roles/add" class="navigation-link"
                         data-drupal-link-system-path="admin/people/roles/add">
                         <span>Add role</span>
                       </a>
@@ -1064,18 +1061,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/people/roles/manage/anonymous" class="navigation-icon"
+                      <a href="/admin/people/roles/manage/anonymous" class="navigation-link"
                         data-drupal-link-system-path="admin/people/roles/manage/anonymous">
                         <span>Anonymous user</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">anonymous user</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/people/permissions/anonymous" class="navigation-icon"
+                          <a href="/admin/people/permissions/anonymous" class="navigation-link"
                             data-drupal-link-system-path="admin/people/permissions/anonymous">
                             <span>Edit permissions</span>
                           </a>
@@ -1085,18 +1082,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/people/roles/manage/authenticated" class="navigation-icon"
+                      <a href="/admin/people/roles/manage/authenticated" class="navigation-link"
                         data-drupal-link-system-path="admin/people/roles/manage/authenticated">
                         <span>Authenticated user</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">authenticated user</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/people/permissions/authenticated" class="navigation-icon"
+                          <a href="/admin/people/permissions/authenticated" class="navigation-link"
                             data-drupal-link-system-path="admin/people/permissions/authenticated">
                             <span>Edit permissions</span>
                           </a>
@@ -1106,18 +1103,18 @@
                   </li>
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/people/roles/manage/administrator" class="navigation-icon"
+                      <a href="/admin/people/roles/manage/administrator" class="navigation-link"
                         data-drupal-link-system-path="admin/people/roles/manage/administrator">
                         <span>Administrator</span>
                       </a>
-                      <button class="navigation-icon navigation-handle">
+                      <button class="navigation-handle">
                         <span class="action">Extend</span> <span class="label">administrator</span>
                       </button>
                     </div>
                     <ul class="navigation-menu">
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/people/roles/manage/administrator/delete" class="navigation-icon"
+                          <a href="/admin/people/roles/manage/administrator/delete" class="navigation-link"
                             data-drupal-link-system-path="admin/people/roles/manage/administrator/delete">
                             <span>Delete</span>
                           </a>
@@ -1125,7 +1122,7 @@
                       </li>
                       <li class="menu-item level-4">
                         <div class="navigation-box">
-                          <a href="/admin/people/permissions/administrator" class="navigation-icon"
+                          <a href="/admin/people/permissions/administrator" class="navigation-link"
                             data-drupal-link-system-path="admin/people/permissions/administrator">
                             <span>Edit permissions</span>
                           </a>
@@ -1139,18 +1136,19 @@
           </li>
           <li class="menu-item level-1">
             <div class="navigation-box">
-              <a href="/admin/reports" class="navigation-icon navigation-icon-system-admin-reports"
+              <a href="/admin/reports" class="navigation-link navigation-link--has-icon"
                 data-drupal-link-system-path="admin/reports">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><g><path fill="currentColor" d="M4 13.529c0 .275-.225.5-.5.5h-3c-.275 0-.5-.225-.5-.5v-4.25c0-.274.225-.5.5-.5h3c.275 0 .5.226.5.5v4.25zM10.002 13.529c0 .275-.225.5-.5.5h-3.002c-.275 0-.5-.225-.5-.5v-13c0-.275.225-.5.5-.5h3.002c.275 0 .5.225.5.5v13zM16.002 13.529c0 .275-.225.5-.5.5h-3c-.275 0-.5-.225-.5-.5v-9.5c0-.275.225-.5.5-.5h3c.275 0 .5.225.5.5v9.5z"/></g></svg>
                 <span>Reports</span>
               </a>
-              <button class="navigation-icon navigation-handle">
+              <button class="navigation-handle">
                 <span class="action">Extend</span> <span class="label">Reports</span>
               </button>
             </div>
             <ul class="navigation-menu">
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/reports/status" class="navigation-icon"
+                  <a href="/admin/reports/status" class="navigation-link"
                     data-drupal-link-system-path="admin/reports/status">
                     <span>Status report</span>
                   </a>
@@ -1158,7 +1156,7 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/reports/dblog" class="navigation-icon"
+                  <a href="/admin/reports/dblog" class="navigation-link"
                     data-drupal-link-system-path="admin/reports/dblog">
                     <span>Recent log messages</span>
                   </a>
@@ -1166,18 +1164,18 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/reports/fields" class="navigation-icon"
+                  <a href="/admin/reports/fields" class="navigation-link"
                     data-drupal-link-system-path="admin/reports/fields">
                     <span>Field list</span>
                   </a>
-                  <button class="navigation-icon navigation-handle">
+                  <button class="navigation-handle">
                     <span class="action">Extend</span> <span class="label">Field list</span>
                   </button>
                 </div>
                 <ul class="navigation-menu">
                   <li class="menu-item level-3">
                     <div class="navigation-box">
-                      <a href="/admin/reports/fields/views-fields" class="navigation-icon"
+                      <a href="/admin/reports/fields/views-fields" class="navigation-link"
                         data-drupal-link-system-path="admin/reports/fields/views-fields">
                         <span>Used in views</span>
                       </a>
@@ -1187,7 +1185,7 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/reports/fields/permissions" class="navigation-icon"
+                  <a href="/admin/reports/fields/permissions" class="navigation-link"
                     data-drupal-link-system-path="admin/reports/fields/permissions">
                     <span>Report all field permissions</span>
                   </a>
@@ -1195,7 +1193,7 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/reports/access-denied" class="navigation-icon"
+                  <a href="/admin/reports/access-denied" class="navigation-link"
                     data-drupal-link-system-path="admin/reports/access-denied">
                     <span>Top 'access denied' errors</span>
                   </a>
@@ -1203,7 +1201,7 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/reports/page-not-found" class="navigation-icon"
+                  <a href="/admin/reports/page-not-found" class="navigation-link"
                     data-drupal-link-system-path="admin/reports/page-not-found">
                     <span>Top 'page not found' errors</span>
                   </a>
@@ -1211,7 +1209,7 @@
               </li>
               <li class="menu-item level-2">
                 <div class="navigation-box">
-                  <a href="/admin/reports/views-plugins" class="navigation-icon"
+                  <a href="/admin/reports/views-plugins" class="navigation-link"
                     data-drupal-link-system-path="admin/reports/views-plugins">
                     <span>Views plugins</span>
                   </a>
