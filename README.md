@@ -4,7 +4,7 @@ This repo contains the initial work for the reworking of the core administration
 A [work-in-progress demo can be viewed on Tugboat](https://main-okupslwxjsqwu4uj8oubxbukri4akkai.tugboatqa.com).
 
 ## PostCSS setup 
-In your terminal, run `npm run watch` to compile CSS changes.
+In your terminal, run `npm run build` to compile CSS changes and `npm run watch` to watch for changes.
 
 ## CHANGELOG
 
