@@ -6,9 +6,6 @@ A [work-in-progress demo can be viewed on Tugboat](https://main-okupslwxjsqwu4uj
 ## PostCSS setup 
 In your terminal, run `npm run build` to compile CSS changes and `npm run watch` to watch for changes.
 
-## Tugboat
-https://main-okupslwxjsqwu4uj8oubxbukri4akkai.tugboatqa.com/
-
 ## CHANGELOG
 
 06/14/23 - Initial commit of the HTML/CSS mockup
