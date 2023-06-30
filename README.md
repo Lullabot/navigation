@@ -6,6 +6,9 @@ A [work-in-progress demo can be viewed on Tugboat](https://main-okupslwxjsqwu4uj
 ## PostCSS setup 
 In your terminal, run `npm run build` to compile CSS changes and `npm run watch` to watch for changes.
 
+## Coding standards
+Use the new Coding Standards we're preparing for core: https://docs.google.com/document/d/1rihTDDGy9-m0TGIadgz16TQ1aONc0OC3u2TkJ8bNaxg/edit#
+
 ## CHANGELOG
 
 06/14/23 - Initial commit of the HTML/CSS mockup
