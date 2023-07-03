@@ -110,6 +110,10 @@
   border: 0 none;
 }
 
+.navigation-logo {
+  padding-block-end: 1em;
+}
+
 /**
  * Handle.
  */
