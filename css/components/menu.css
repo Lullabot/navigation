@@ -110,8 +110,16 @@
   border: 0 none;
 }
 
-.navigation-logo {
-  padding-block-end: 1em;
+.navigation__logo {
+  padding-block: 1em;
+  padding-inline: 0.75em;
+}
+
+.navigation__logo a {
+  background-color: var(--color-blue-500);
+  border-radius: 0.25em;
+  display: inline-block;
+  padding: 0.5em;
 }
 
 /**
