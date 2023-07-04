@@ -15,9 +15,8 @@
       <button aria-controls="navigation-sidebar" aria-expanded="true" aria-label="Collapse sidebar" id="sidebar-control">
         <div class="navigation-sidebar__icon"></div>
       </button>
-      <div class="navigation__sidebar--menu">
-        <!-- Comment out title for now, until we implement multiple menus -->
-        <!-- <h2 class="menu-title" id="menu--site-builder">Content Editor</h2> -->
+      <nav id="menu-builder" class="navigation__sidebar--menu" aria-labelledby="menu--site-builder" role="navigation">
+        <h2 id="menu--site-builder" class="menu-title">Administration</h2>
         <ul class="navigation-menu" data-once="navigation-menu" aria-labelledby="menu--site-builder">
           <li class="menu-item level-1">
             <div class="navigation-box">
@@ -1218,7 +1217,7 @@
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
 
     <!-- Page Content -->
