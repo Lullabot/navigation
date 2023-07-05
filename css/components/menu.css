@@ -136,6 +136,14 @@
   margin-inline-end: 3em; /* LTR */
 }
 
+.navigation__sidebar:not(.is-active) .action-link {
+  padding-inline: 7px;
+}
+
+.navigation__sidebar:not(.is-active) .action-link span {
+  display: none;
+}
+
 .navigation__sidebar--menu:first-of-type {
   margin-block-start: 40px;
 }
