@@ -8,8 +8,11 @@
   },
   "main": "index.html",
   "scripts": {
-    "build": "postcss css/style.css --dir dist",
-    "watch": "postcss css/style.css --dir dist --watch"
+    "build": "yarn build:css",
+    "watch": "yarn watch:css",
+    "build:css": "node ./scripts/css/postcss-build.js",
+    "watch:css": "node ./scripts/css/postcss-watch.js",
+    "lint:css": "stylelint \"**/*.css\""
   },
   "keywords": [],
   "author": "",
@@ -19,10 +22,22 @@
   },
   "homepage": "https://github.com/Lullabot/navigation#readme",
   "devDependencies": {
-    "cssnano": "^6.0.1",
+    "autoprefixer": "^10.4.14",
+    "chokidar": "^3.5.3",
+    "fs": "^0.0.1-security",
+    "glob": "^8.0.3",
+    "minimist": "^1.2.8",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0",
-    "postcss-pxtorem": "^6.0.0"
+    "postcss-header": "^3.0.2",
+    "postcss-import": "^15.0.0",
+    "postcss-preset-env": "^8.4.2",
+    "postcss-pxtorem": "^6.0.0",
+    "postcss-url": "^10.1.3",
+    "prettier": "^2.1.2",
+    "stylelint": "^15.7.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-order": "^6.0.3",
+    "yarn": "^1.22.19"
   }
 }

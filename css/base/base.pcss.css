@@ -1,0 +1,71 @@
+/**
+ * General styling for the HTML demonstration
+ */
+
+ html {
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+ }
+
+ body {
+  margin: 0;
+ }
+
+.navigation__container {
+  display: flex;
+  gap: 48px;
+  block-size: 100%;
+  background-color: #F5F8FF;
+}
+
+.navigation__sidebar {
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-inline-end: 1px solid #aaa;
+  background-color: white;
+  box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.3333);
+  transition: width .2s ease;
+  inline-size: 64px;
+  overflow: hidden;
+
+  &.is-active {
+    inline-size: 260px;
+    overflow-y: scroll;
+  }
+}
+
+/* Content Area */
+.navigation__content {
+  inline-size: 100%;
+
+  & .navigation__content--profile-icon {
+    display: block;
+    inline-size: 18px;
+    block-size: 18px;
+    padding: 9px;
+    margin-inline-end: 20px;
+    text-indent: -9999px;
+    background: url(../../icons/75767B/user-icon.svg) no-repeat center;
+    background-size: 18px;
+  }
+}
+
+.navigation__content--inner {
+  margin-inline-end: 20px;
+}
+
+#sidebar-control {
+  margin: 12px;
+  padding-block-start: 12px;
+}
+
+.menu-title,
+.level-1 > .navigation-box {
+  padding-inline-start: 12px;
+}
+
+.menu-title {
+  padding-inline-end: 12px;
+}
