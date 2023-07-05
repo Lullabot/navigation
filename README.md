@@ -3,8 +3,9 @@ This repo contains the initial work for the reworking of the core administration
 
 A [work-in-progress demo can be viewed on Tugboat](https://main-okupslwxjsqwu4uj8oubxbukri4akkai.tugboatqa.com).
 
-## PostCSS setup 
-In your terminal, run `npm run build` to compile CSS changes and `npm run watch` to watch for changes.
+## Local setup
+1. In your terminal, run `yarn install`
+2. In your terminal, run `yarn run build` to compile CSS changes or `yarn run watch` to watch for changes.
 
 ## Coding standards
 Use the new Coding Standards we're preparing for core: https://docs.google.com/document/d/1rihTDDGy9-m0TGIadgz16TQ1aONc0OC3u2TkJ8bNaxg/edit#

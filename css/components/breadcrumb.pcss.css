@@ -4,28 +4,27 @@
 }
 
 .breadcrumb__list {
+  padding-inline-start: 0;
   display: flex;
-  padding-left: 0;
 }
 
 .breadcrumb__link {
-  -webkit-text-decoration: none;
-  text-decoration: none;
   color: var(--color-gray-950);
-  font-size: 0.8125rem;
+  font-size: 13px;
   font-weight: 700;
-}
+  text-decoration: none;
 
-.breadcrumb__link::after {
+  &::after {
     display: inline-block;
     padding: 0 0.75rem;
     content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' height='8' width='5'%3e%3cpath fill='currentColor' d='M1.207.647L.5 1.354 3.146 4 .5 6.647l.707.707L4.561 4z'/%3e%3c/svg%3e");
   }
+}
 
 .breadcrumb__item {
   list-style: none;
-}
 
-.breadcrumb__item:last-of-type .breadcrumb__link:after {
+  &:last-of-type .breadcrumb__link:after {
     content: "";
   }
+}

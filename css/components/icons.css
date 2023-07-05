@@ -1,106 +1,126 @@
 .navigation-link {
   position: relative;
-  padding-block: 1em;
-  color: var(--color-gray-800);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  -webkit-text-decoration: none;
   text-decoration: none;
+  color: var(--color-gray-800);
 }
+
 
 .navigation-link:hover,
-.navigation-link:active,
-.navigation-link:focus,
-.navigation-link:focus-within {
-  text-decoration: underline;
-  color: #000;
-}
+  .navigation-link:active,
+  .navigation-link:focus,
+  .navigation-link:focus-within {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    color: #000;
+  }
+
 
 .navigation__sidebar.is-active .navigation-link {
-  padding-right: 12px;
+  padding-right: 0.75rem;
 }
+
 
 .navigation__sidebar.is-active .navigation-link svg {
-  margin-right: 12px;
-}
+    margin-right: 0.75rem;
+  }
+
 
 .navigation__sidebar:not(.is-active) .level-1 > .navigation-box {
-  padding-right: 12px;
-}
+    padding-right: 0.75rem;
+  }
+
 
 .navigation__sidebar:not(.is-active) .navigation-box {
-  justify-content: center;
-}
+    justify-content: center;
+  }
+
 
 .navigation-link--has-icon span {
+  transition: opacity 0.4s ease;
   opacity: 1;
-  transition: opacity .4s ease;
 }
 
+
 .navigation-menu ul .navigation-link {
-  padding-inline-start: 1.3333em;
+  padding-left: 1.3333em;
 }
+
 
 /**
  * Handle.
  */
 
+
 .navigation-handle {
-  border: 0;
-  background-color: transparent;
-  font-size: 1em;
-  inline-size: 44px;
-  flex-basis: 44px;
-  flex-shrink: 0;
-  border-inline-start: 1px solid white;
   z-index: 1;
   display: block;
+  flex-basis: 2.75rem;
+  flex-shrink: 0;
+  width: 2.75rem;
   padding: 0;
+  border: 0;
+  border-left: 1px solid white;
+  background-color: transparent;
+  font-size: 1em;
 }
+
 
 .navigation-handle::before {
-  display: block;
-  block-size: 100%;
-  content: "";
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: var(--color-gray-700);
-  background-image: url(../icons/75767B/chevron-down.svg);
-  background-size: 12px;
-}
+    display: block;
+    height: 100%;
+    content: "";
+    color: var(--color-gray-700);
+    background-image: url(../icons/75767B/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 0.75rem;
+  }
+
 
 .navigation-box {
-  border-block-end: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
-.menu-item--expanded > .navigation-box {
-  background-color: var(--color-blue-050);
-}
-
-.menu-item--expanded > .navigation-box > .navigation-link {
-  color: var(--color-blue-700);
-}
 
 .menu-item--expanded > .navigation-box {
   border-color: white;
-}
-
-.menu-item--expanded > .navigation-box > .navigation-handle::before {
-  transform: rotate(180deg);
-}
-
-.navigation-handle.open {
-  outline: none;
   background-color: var(--color-blue-050);
 }
 
+
+.menu-item--expanded > .navigation-box > .navigation-link {
+    color: var(--color-blue-700);
+  }
+
+
+.menu-item--expanded > .navigation-box > .navigation-handle::before {
+    transform: rotate(180deg);
+  }
+
+
+.navigation-handle.open {
+    outline: none;
+    background-color: var(--color-blue-050);
+  }
+
+
 /* 
- * visually-hidden button text
- */
- .navigation-handle .action,
- .navigation-handle .label {
-   clip: rect(0 0 0 0);
-   clip-path: inset(50%);
-   height: 1px;
-   overflow: hidden;
-   position: absolute;
-   white-space: nowrap;
-   width: 1px;
- }
+   * visually-hidden button text
+   */
+
+
+.navigation-handle .action,
+  .navigation-handle .label {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+  }
+
