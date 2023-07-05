@@ -110,6 +110,21 @@
   border: 0 none;
 }
 
+.navigation-menu__action {
+  padding-inline: 12px;
+}
+
+.navigation-menu .action-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007DB2;
+  color: white;
+  border-radius: 8px;
+  padding-block: 10px;
+  padding-inline: 18px;
+}
+
 /**
  * Handle.
  */
