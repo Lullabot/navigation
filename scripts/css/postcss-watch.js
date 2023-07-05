@@ -10,7 +10,9 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 const chokidar = require('chokidar');
+
 const changeOrAdded = require('./changeOrAdded');
 const log = require('./log');
 

@@ -9,10 +9,12 @@ module.exports = (filePath) => {
     const fileName = filePath.slice(0, -9);
     fs.readFile(`${fileName}.css`, function read(err, data) {
       if (err) {
+        log(err);
         process.exitCode = 1;
         return;
       }
       if (code !== data.toString()) {
+        log(`'${filePath}' is not updated.`);
         process.exitCode = 1;
       }
     });
