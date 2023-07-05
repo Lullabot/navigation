@@ -111,15 +111,16 @@
 }
 
 .navigation__logo {
-  padding-block: 1em;
-  padding-inline: 0.75em;
+  display: flex;
+  margin-block-start: 1em;
+  margin-inline: 0.75em;
 }
 
 .navigation__logo a {
-  background-color: var(--color-blue-500);
+  background-color: var(--drupal--brand-blue);
   border-radius: 0.25em;
-  display: inline-block;
-  padding: 0.5em;
+  padding-block: 0.5em;
+  padding-inline: 0.8em;
 }
 
 /**
