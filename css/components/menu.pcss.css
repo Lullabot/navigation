@@ -143,3 +143,15 @@
     opacity: 0;
   }
 }
+
+.navigation__sidebar--sticky-menu {
+  background-color: white;
+  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  & .navigation-menu__user {
+    padding-block: 16px;
+    padding-inline: 12px;
+  }
+}

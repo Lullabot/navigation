@@ -28,6 +28,8 @@ body {
 }
 
 .navigation__sidebar {
+  display: flex;
+  flex-direction: column;
   font-size: 1rem;
   box-sizing: border-box;
   border-right: 1px solid #aaa;
@@ -35,7 +37,8 @@ body {
   box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.3333);
   transition: width 0.2s ease;
   width: 4rem;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .navigation__sidebar.is-active {
