@@ -93,7 +93,7 @@
   transform: rotate(180deg);
 }
 
-.navigation-handle[aria-expanded=true] {
+.navigation-handle[aria-expanded="true"] {
   outline: none;
   background-color: var(--color-blue-050);
 }
