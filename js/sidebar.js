@@ -13,7 +13,7 @@ if (sidebar_control) {
       var elems = document.querySelectorAll(".menu-item.menu-item--expanded");
       [].forEach.call(elems, function(el) {
           el.classList.remove("menu-item--expanded");
-          el.querySelector('.open').classList.remove('open');
+          el.querySelector('.navigation-handle[aria-expanded=true]').setAttribute['aria-expanded', 'false'];
           el.querySelector('.action').textContent = 'Extend';
       });
     } else {
@@ -32,11 +32,11 @@ if (dropdowns) {
       const parent_list_item = e.target.parentElement.parentElement;
       if (parent_list_item.classList.contains('menu-item--expanded')) {
         parent_list_item.classList.remove('menu-item--expanded');
-        e.target.classList.remove('open');
+        e.target.setAttribute('aria-expanded', 'false');
         e.target.querySelector('.action').textContent = 'Extend';
       } else {
         parent_list_item.classList.add('menu-item--expanded');
-        e.target.classList.add('open');
+        e.target.setAttribute('aria-expanded', 'true');
         e.target.querySelector('.action').textContent = 'Collapse';
       }
     });
