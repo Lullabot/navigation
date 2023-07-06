@@ -103,6 +103,18 @@
   }
 }
 
+.navigation__logo {
+  display: flex;
+  margin-block-start: 1em;
+  margin-inline: 0.75em;
+
+  & a {
+    background-color: var(--drupal--brand-blue);
+    border-radius: 0.25em;
+    padding-block: 0.5em;
+    padding-inline: 0.8em;
+  }
+}
 
 .navigation-box {
   position: relative;
