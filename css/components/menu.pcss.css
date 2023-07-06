@@ -1,0 +1,145 @@
+.navigation-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & a {
+    display: block;
+    line-height: 1;
+  }
+}
+
+.menu-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* sidebar button */
+#sidebar-control {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-block: 8px;
+  padding-inline: 0;
+
+  &[aria-expanded="true"] .navigation-sidebar__icon {
+    background-color: transparent;
+
+    &::before {
+      transform: rotate(-45deg);
+      inset-block-start: 0;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+      inset-block-start: 0;
+    }
+  }
+}
+
+.navigation-sidebar__icon {
+  background-color: var(--color-gray-800);
+  position: relative;
+  inline-size: 30px;
+  block-size: 3px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset-block-start: -8px;
+    inset-inline-start: 0;
+    block-size: 3px;
+    inline-size: 100%;
+    background-color: var(--color-gray-800);
+    transition: all .2s;
+  }
+
+  &::before {
+    inset-block-start: -8px;
+  }
+  
+  &::after {
+    inset-block-start: auto;
+    inset-block-end: -8px
+  }
+}
+
+.navigation-menu .navigation-menu {
+  & .navigation-menu .navigation-menu {
+    margin-inline-start: 0.25em; 
+  }
+
+  & a {
+    color: #434343;
+  }
+}
+
+.menu-item {
+  list-style: none;
+  padding-block-start: 0;
+  background-color: var(--color-blue-020);
+  font-size: 14px;
+
+  &.level-1 {
+    background-color: white;
+    font-size: 16px;
+  }
+  
+  &.level-2 {
+    padding-inline-start: 2em;
+  }
+  
+  &.level-3 {
+    padding-inline-start: 0.5em;
+  }
+
+  & .menu-item {
+    border: 0 none;
+  }
+
+  &:not(.menu-item--expanded) > ul.navigation-menu {
+    display: none;
+  }
+}
+
+
+.navigation-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  inline-size: auto;
+  line-height: 1em; /* this prevents the value "normal" from being returned as the line-height */
+}
+
+/**
+ * Handle.
+ */
+.navigation-handle {
+  &:hover {
+    cursor: pointer;
+  }
+
+  & + a {
+    margin-inline-end: 3em; /* LTR */
+  }
+}
+
+.navigation__sidebar--menu {
+  &:first-of-type {
+    margin-block-start: 40px;
+  }
+
+  &:not(:last-child) {
+    margin-block-end: 20px;
+  }
+}
+
+.navigation__sidebar:not(.is-active) {
+  & .navigation-link span,
+  & .navigation-handle {
+    display: none;
+    opacity: 0;
+  }
+}
