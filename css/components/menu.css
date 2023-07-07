@@ -111,6 +111,22 @@
   display: none;
 }
 
+.navigation__logo {
+  display: flex;
+  margin-top: 1em;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+
+.navigation__logo a {
+  background-color: var(--drupal--brand-blue);
+  border-radius: 0.25em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
 .navigation-box {
   position: relative;
   display: flex;
