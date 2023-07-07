@@ -37,6 +37,10 @@
     inline-size: 260px;
     overflow-y: scroll;
   }
+
+  @media only screen and (max-height: 300px)  {
+    min-height: 20rem;
+  }
 }
 
 /* Content Area */

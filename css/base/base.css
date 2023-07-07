@@ -46,6 +46,12 @@ body {
   overflow-y: scroll;
 }
 
+@media only screen and (max-height: 18.75rem) {
+  .navigation__sidebar {
+    min-height: 20rem;
+  }
+}
+
 /* Content Area */
 
 .navigation__content {
