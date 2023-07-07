@@ -136,6 +136,33 @@
   line-height: 1em; /* this prevents the value "normal" from being returned as the line-height */
 }
 
+.navigation-menu__action {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.navigation-menu .action-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007db2;
+  color: white;
+  border-radius: 0.5rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+
+.navigation__sidebar:not(.is-active) .action-link {
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
+}
+
+.navigation__sidebar:not(.is-active) .action-link span {
+  display: none;
+}
+
 /**
  * Handle.
  */
