@@ -103,6 +103,18 @@
   }
 }
 
+.navigation__logo {
+  display: flex;
+  margin-block-start: 1em;
+  margin-inline: 0.75em;
+
+  & a {
+    background-color: var(--drupal--brand-blue);
+    border-radius: 0.25em;
+    padding-block: 0.5em;
+    padding-inline: 0.8em;
+  }
+}
 
 .navigation-box {
   position: relative;
@@ -111,6 +123,29 @@
   align-items: stretch;
   inline-size: auto;
   line-height: 1em; /* this prevents the value "normal" from being returned as the line-height */
+}
+
+.navigation-menu__action {
+  padding-inline: 12px;
+}
+
+.navigation-menu .action-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007DB2;
+  color: white;
+  border-radius: 8px;
+  padding-block: 10px;
+  padding-inline: 18px;
+}
+
+.navigation__sidebar:not(.is-active) .action-link {
+  padding-inline: 7px;
+}
+
+.navigation__sidebar:not(.is-active) .action-link span {
+  display: none;
 }
 
 /**
