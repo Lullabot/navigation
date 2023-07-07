@@ -87,7 +87,7 @@
 }
 
 .navigation-handle {
-  &.open {
+  &[aria-expanded=true] {
     outline: none;
     background-color: var(--color-blue-050);
   }
