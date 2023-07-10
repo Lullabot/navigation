@@ -178,3 +178,21 @@
     opacity: 0;
   }
 }
+
+.navigation__sidebar--sticky-menu {
+  box-shadow: 0px -20px 20px 10px white;
+  background-color: white;
+  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  & .navigation-menu__user {
+    padding-block: 16px;
+    padding-inline: 12px;
+  }
+
+  & ul {
+    border-top: 1px solid var(--drupal--light-blue);
+    margin-inline: 12px;
+  }
+}

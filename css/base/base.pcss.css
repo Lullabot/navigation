@@ -21,6 +21,8 @@
 }
 
 .navigation__sidebar {
+  display: flex;
+  flex-direction: column;
   font-size: 1rem;
   box-sizing: border-box;
   border-inline-end: 1px solid #aaa;
@@ -28,11 +30,16 @@
   box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.3333);
   transition: width .2s ease;
   inline-size: 64px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   &.is-active {
     inline-size: 260px;
     overflow-y: scroll;
+  }
+
+  @media only screen and (max-height: 300px)  {
+    min-height: 20rem;
   }
 }
 

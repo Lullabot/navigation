@@ -188,3 +188,25 @@
   display: none;
   opacity: 0;
 }
+
+.navigation__sidebar--sticky-menu {
+  box-shadow: 0px -20px 20px 10px white;
+  background-color: white;
+  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+.navigation__sidebar--sticky-menu .navigation-menu__user {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.navigation__sidebar--sticky-menu ul {
+  border-top: 1px solid var(--drupal--light-blue);
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
