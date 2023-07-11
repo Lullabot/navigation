@@ -16,6 +16,11 @@
   line-height: 1;
 }
 
+.navigation-menu .navigation-link--has-icon {
+  display: flex;
+  align-items: center;
+}
+
 .menu-title {
   font-size: 1rem;
   font-weight: 700;
