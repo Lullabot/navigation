@@ -21,6 +21,11 @@
   align-items: center;
 }
 
+.navigation-link--has-icon {
+  display: flex;
+  align-items: center;
+}
+
 .menu-title {
   font-size: 1rem;
   font-weight: 700;
@@ -180,10 +185,6 @@
   margin-right: 3em; /* LTR */
 }
 
-.navigation__sidebar--menu:first-of-type {
-  margin-top: 2.5rem;
-}
-
 .navigation__sidebar--menu:not(:last-child) {
   margin-bottom: 1.25rem;
 }
@@ -214,4 +215,8 @@
   border-top: 1px solid var(--drupal--light-blue);
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.dashboard-link {
+  padding-left: 0.75rem;
 }

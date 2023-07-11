@@ -63,6 +63,12 @@ body {
   }
 }
 
+/* Blocks Area */
+
+.navigation__blocks {
+  margin-top: 1rem;
+}
+
 /* Content Area */
 
 .navigation__content {

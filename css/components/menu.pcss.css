@@ -14,6 +14,11 @@
   }
 }
 
+.navigation-link--has-icon {
+  display: flex;
+  align-items: center;
+}
+
 .menu-title {
   font-size: 16px;
   font-weight: 700;
@@ -167,10 +172,6 @@
 }
 
 .navigation__sidebar--menu {
-  &:first-of-type {
-    margin-block-start: 40px;
-  }
-
   &:not(:last-child) {
     margin-block-end: 20px;
   }
@@ -200,4 +201,8 @@
     border-top: 1px solid var(--drupal--light-blue);
     margin-inline: 12px;
   }
+}
+
+.dashboard-link {
+  padding-left: 0.75rem;
 }
