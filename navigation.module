@@ -1,0 +1,20 @@
+<?php
+function navigation_preprocess_html(array &$variables) {
+  unset($variables['page_top']['toolbar']);
+
+  $variables['page_top']['navigation'] = [
+    '#theme' => 'navigation',
+  ];
+
+}
+
+/**
+ * Implements hook_theme().
+ */
+function navigation_theme($existing, $type, $theme, $path) {
+  $items['navigation'] = [
+    'variables' => [],
+  ];
+
+  return $items;
+}
