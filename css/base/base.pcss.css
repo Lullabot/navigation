@@ -41,6 +41,7 @@ body {
   &.is-active {
     inline-size: 260px;
     overflow-y: scroll;
+    height: 100vh;
   }
 
   @media only screen and (max-height: 300px)  {

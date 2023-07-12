@@ -50,6 +50,7 @@ body {
 .navigation__sidebar.is-active {
   width: 16.25rem;
   overflow-y: scroll;
+  height: 100vh;
 }
 
 @media only screen and (max-height: 18.75rem) {
