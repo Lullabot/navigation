@@ -1,0 +1,11 @@
+navigation:
+  version: VERSION
+  js:
+    js/sidebar.js: {}
+  css:
+    theme:
+      css/base/base.css: {}
+      css/base/colors.css: {}
+      css/components/breadcrumb.css: {}
+      css/components/icons.css: {}
+      css/components/menu.css: {}
