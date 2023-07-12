@@ -7,6 +7,16 @@
     display: block;
     line-height: 1;
   }
+
+  & .navigation-link--has-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation-link--has-icon {
+  display: flex;
+  align-items: center;
 }
 
 .menu-title {
@@ -162,10 +172,6 @@
 }
 
 .navigation__sidebar--menu {
-  &:first-of-type {
-    margin-block-start: 40px;
-  }
-
   &:not(:last-child) {
     margin-block-end: 20px;
   }
@@ -195,4 +201,8 @@
     border-top: 1px solid var(--drupal--light-blue);
     margin-inline: 12px;
   }
+}
+
+.dashboard-link {
+  padding-left: 0.75rem;
 }

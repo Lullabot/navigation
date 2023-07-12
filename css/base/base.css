@@ -20,6 +20,17 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .navigation__container {
   display: flex;
   gap: 3rem;
@@ -50,6 +61,12 @@ body {
   .navigation__sidebar {
     min-height: 20rem;
   }
+}
+
+/* Blocks Area */
+
+.navigation__blocks {
+  margin-top: 1rem;
 }
 
 /* Content Area */
