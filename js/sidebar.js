@@ -43,3 +43,15 @@ if(dropdowns) {
     });
   }
 }
+
+// add class to selected nav bar option for css styling
+let current = 0;
+for (var i = 0; i < document.links.length; i++) {
+  if (document.links[i].href === document.URL) {
+    if (document.links[i].classList.contains('navigation-link')) {
+      current = i;
+      break;
+    }
+  }
+}
+document.links[current].parentElement.parentElement.className += ' current';
