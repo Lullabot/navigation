@@ -1,20 +1,21 @@
 const sidebar = document.getElementById("navigation-sidebar");
 const sidebar_control = document.getElementById("sidebar-control");
 const dropdowns = document.getElementsByClassName('navigation-handle');
-
 // expand/collapse the sidebar
-if (sidebar_control) {
+if(sidebar_control) {
   sidebar_control.addEventListener("click", () => {
     if (sidebar.classList.contains("is-active")) {
       sidebar.classList.remove("is-active");
       sidebar_control.setAttribute("aria-label", "Expand sidebar");
       sidebar_control.setAttribute("aria-expanded", "false");
       // close all open menu items
-      var elems = document.querySelectorAll(".menu-item.menu-item--expanded");
+      var elems = document.querySelectorAll(
+        ".menu-item.menu-item--expanded");
       [].forEach.call(elems, function(el) {
-          el.classList.remove("menu-item--expanded");
-          el.querySelector('.navigation-handle[aria-expanded=true]').setAttribute['aria-expanded', 'false'];
-          el.querySelector('.action').textContent = 'Extend';
+        el.classList.remove("menu-item--expanded");
+        el.querySelector(
+          '.navigation-handle[aria-expanded=true]').setAttribute['aria-expanded', 'false'];
+        el.querySelector('.action').textContent = 'Extend';
       });
     } else {
       sidebar.classList.add("is-active");
@@ -26,7 +27,7 @@ if (sidebar_control) {
 }
 
 // expand/collapse sidebar menu dropdowns
-if (dropdowns) {
+if(dropdowns) {
   for (let i = 0; i < dropdowns.length; i++) {
     dropdowns[i].addEventListener("click", (e) => {
       const parent_list_item = e.target.parentElement.parentElement;
@@ -42,3 +43,15 @@ if (dropdowns) {
     });
   }
 }
+
+// add class to selected nav bar option for css styling
+let current = 0;
+for (var i = 0; i < document.links.length; i++) {
+  if (document.links[i].href === document.URL) {
+    if (document.links[i].classList.contains('navigation-link')) {
+      current = i;
+      break;
+    }
+  }
+}
+document.links[current].parentElement.parentElement.className += ' current';

@@ -68,7 +68,7 @@
   &::before {
     inset-block-start: -8px;
   }
-  
+
   &::after {
     inset-block-start: auto;
     inset-block-end: -8px
@@ -77,7 +77,7 @@
 
 .navigation-menu .navigation-menu {
   & .navigation-menu .navigation-menu {
-    margin-inline-start: 0.25em; 
+    margin-inline-start: 0.25em;
   }
 
   & a {
@@ -95,11 +95,11 @@
     background-color: white;
     font-size: 16px;
   }
-  
+
   &.level-2 {
     padding-inline-start: 2em;
   }
-  
+
   &.level-3 {
     padding-inline-start: 0.5em;
   }
@@ -200,9 +200,19 @@
   & ul {
     border-top: 1px solid var(--drupal--light-blue);
     margin-inline: 12px;
+
+    & li {
+      list-style: none;
+    }
   }
+
 }
 
 .dashboard-link {
   padding-left: 0.75rem;
 }
+
+.current {
+  background-color: #e5edff!important;
+}
+
