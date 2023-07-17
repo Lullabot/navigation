@@ -1,16 +1,18 @@
-# Drupal core new administration navigation
+# Repo not used anymore. Go to [Navigation]https://www.drupal.org/project/navigation to see the last work.
+
+## Drupal core new administration navigation
 This repo contains the initial work for the reworking of the core administration toolbar in Drupal core.
 
 A [work-in-progress demo can be viewed on Tugboat](https://main-okupslwxjsqwu4uj8oubxbukri4akkai.tugboatqa.com).
 
-## Local setup
+### Local setup
 1. In your terminal, run `yarn install`
 2. In your terminal, run `yarn run build` to compile CSS changes or `yarn run watch` to watch for changes.
 
-## Coding standards
+### Coding standards
 Use the new Coding Standards we're preparing for core: https://docs.google.com/document/d/1rihTDDGy9-m0TGIadgz16TQ1aONc0OC3u2TkJ8bNaxg/edit#
 
-## CHANGELOG
+### CHANGELOG
 
 06/14/23 - Initial commit of the HTML/CSS mockup
 - HTML structure is modeled on the output provided by the core `toolbar` module when it is in vertical mode and has been cleaned up some.
