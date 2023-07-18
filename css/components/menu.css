@@ -217,6 +217,14 @@
   margin-right: 0.75rem;
 }
 
+.navigation__sidebar--sticky-menu ul li {
+  list-style: none;
+}
+
 .dashboard-link {
   padding-left: 0.75rem;
+}
+
+.current {
+  background-color: #e5edff !important;
 }
