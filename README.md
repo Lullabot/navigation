@@ -1,4 +1,4 @@
-# Repo not used anymore. Go to [Navigation]https://www.drupal.org/project/navigation to see the last work.
+# Repo not used anymore. Go to [Navigation](https://www.drupal.org/project/navigation) to see the last work.
 
 ## Drupal core new administration navigation
 This repo contains the initial work for the reworking of the core administration toolbar in Drupal core.
